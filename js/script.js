@@ -35,17 +35,3 @@ $(document).ready(function() {
                     .transitionDuration(1500);
             }
             
-            chart.select("svg")
-                .attr("height", "100%")
-                .attr("width", "100%")
-                .attr("viewBox", "0 0 320 360");
-            chart.selectAll(".dc-legend-item text")
-                .attr("fill", "#ffffff")
-                .text("")
-                .append("tspan")
-                .text(function(d) { return d.name; })
-                .append("tspan")
-                .attr("x", 100)
-                .attr("text-anchor", "end")
-                .text(function(d) { return d.data.toLocaleString(); });
-        });
