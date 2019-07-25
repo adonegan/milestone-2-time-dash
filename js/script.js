@@ -6,7 +6,7 @@ $(document).ready(function() {
                 var ndx = crossfilter(mydata);
 
 
-                show_country_pie(archiveData);
+                show_country_pie(ndx);
 
                 dc.renderAll();
 
