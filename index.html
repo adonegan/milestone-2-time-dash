@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3.chart/0.3.0/d3.chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/3.1.0/dc.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-queue/3.0.7/d3-queue.min.js"></script>
 
     <title>Time Magazine's Person of the Year, 1927 - Present</title>
@@ -25,8 +24,9 @@
         <div class="row">
             <div class="col-sm-4">
                 <nav>
+                    <div id="total"><span class="filter-count"></span></div>
                     <div id="nav-name">Time Magazine's Person of the Year, 1927 - Present</div>
-                    
+
                 </nav>
             </div>
         </div>
@@ -34,44 +34,10 @@
 
     <!------------------------------------------- Pie chart --------------------------------------->
 
-   <div>
-       <h3>By Country</h3>
-       <div id="countryChart"></div>
-   </div>
-   
-   <div>
-       <h3>By Category</h3>
-       <div id="categoryChart"></div>
-   </div>
-
-<script>
-    
-d3.csv("../data/archive.csv").then(makeGraphs);
-    
-function makeGraphs(error,archiveData){
-    var ndx = crossfilter(archiveData);
-    
-    var country_dim = ndx.dimension(dc.pluck('country'));
-    var total_times_countries = country_dim.group().reduceSum(dc.pluck('country'));
-    
-    dc.pieChart('#countryChart')
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
-        .dimension(country_dim)
-        .group(total_times_countries);
-        
-    dc.renderAll();
-    
-}
-    
-    
-    
-    
-    
-</script>
-
-
+    <div>
+        <h3>By Country</h3>
+        <div id="countryChart"></div>
+    </div>
 
 </body>
 
