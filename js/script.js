@@ -1,37 +1,29 @@
-$(document).ready(function() {
-
-            d3.json("../data/archive.json").then(makeGraphs);
-
-            function makeGraphs(error, mydata) {
-                var ndx = crossfilter(mydata);
+queue()
+    .defer(d3.json, "data/archive.json")
+    .await(makeGraphs);
 
 
-                show_country_pie(ndx);
-
-                dc.renderAll();
-
-            }
-
-            function show_country_pie(ndx) {
-
-                var country_dim = ndx.dimension(dc.pluck('country'));
-                var total_times_countries = country_dim.group();
-
-                var pieChartCountry = dc.pieChart(country_dim);
-                var dim = ndx.dimension(dc.pluck('country'));
-                var group = dim.group();
+function makeGraphs(error, archiveData) {
+    var ndx = crossfilter(archiveData);
 
 
-                d3.selectAll("#resetCountry").on("click", function() {
-                    pieChartCountry.filterAll();
-                    dc.redrawAll();
-                });
+    show_country_pie(ndx);
 
-                dc.pieChart("#countryChart")
-                    .dimension(dim)
-                    .group(total_times_countries)
-                    .height(330)
-                    .radius(90)
-                    .transitionDuration(1500);
-            }
-            
+    dc.renderAll();
+
+}
+
+function show_country_pie(ndx) {
+
+    var dim = ndx.dimension(dc.pluck('Country'));
+    var group = dim.group();
+
+
+
+    dc.pieChart("#country-chart")
+        .dimension(dim)
+        .group(group)
+        .height(330)
+        .radius(90)
+        .transitionDuration(1500);
+}
