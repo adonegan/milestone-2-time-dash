@@ -55,5 +55,3 @@ function show_honor_pie(ndx) {
         .transitionDuration(1500);
         
 }
-
- 
