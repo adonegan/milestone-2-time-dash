@@ -18,7 +18,8 @@ function makeGraphs(error, archiveData) {
     show_country_pie(ndx);
     show_category_pie(ndx);
     show_honor_pie(ndx);
-    show_category_bar(ndx);
+    //show_category_bar(ndx);
+    show_category_bar2(ndx);
 
     dc.renderAll();
 
@@ -67,12 +68,12 @@ function show_honor_pie(ndx) {
         .radius(200)
         .transitionDuration(1500);
         
-        print_filter(group);
+        //print_filter(group);
         
 }
 
-function show_category_bar(ndx) {
-    var categoryDimension = ndx.dimension(function(d){ return d.category});
+ /* function show_category_bar(ndx) {
+    var categoryDimension= ndx.dimension(function(d){ return d.category});
     var categoryGroup = categoryDimension.group();
     
    dc.barChart("#bar-chart")
@@ -84,5 +85,23 @@ function show_category_bar(ndx) {
   // print_filter(categoryDimension);
   // console.log(categoryDimension);     
 
-}
+} */
 
+
+function show_category_bar2(ndx) {
+    var dim = ndx.dimension(dc.pluck('Category'));
+    var group = dim.group();
+
+ dc.barChart("#bar-chart")
+        .width(1000)
+        .height(250)
+        .dimension(dim)
+        .group(group)
+        .x(d3.scale.ordinal().domain(["Politics", "War", "Technology", "Economics", "Space", "Diplomacy", "Media", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
+        .xUnits(dc.units.ordinal)
+       // .gap(10);
+        .barPadding(0.2);
+        
+         print_filter(group);
+
+}
