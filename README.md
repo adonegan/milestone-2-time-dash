@@ -16,8 +16,7 @@ country the winners are from.
 * User story 4: As a sometimes reader of Time magazine, I like hearing who has made it to the top of the Person of the Year choice.
 * User story 5: As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
 
-Wireframes
-
+### Wireframes
 
 ## Features
 
