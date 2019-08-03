@@ -16,7 +16,7 @@ function makeGraphs(error, archiveData) {
 
 
     show_country_pie(ndx);
-    show_category_pie(ndx);
+   // show_category_pie(ndx);
     show_honor_pie(ndx);
     //show_category_bar(ndx);
     show_category_bar2(ndx);
@@ -30,6 +30,10 @@ function show_country_pie(ndx) {
     var group = dim.group();
 
     dc.pieChart("#country-chart")
+       // .externalLabels(50)
+       // .drawPaths(true)
+       // .slicesCap(4)
+       // .externalRadiusPadding(50)
         .dimension(dim)
         .group(group)
         .height(350)
@@ -37,10 +41,11 @@ function show_country_pie(ndx) {
         .radius(200)
         .transitionDuration(1500);
         
+        
         // print_filter(group);
 }
 
-function show_category_pie(ndx) {
+/* function show_category_pie(ndx) {
     var dim = ndx.dimension(dc.pluck('Category'));
     var group = dim.group();
 
@@ -54,7 +59,7 @@ function show_category_pie(ndx) {
         
         //print_filter(group);
         
-}
+} */
 
 function show_honor_pie(ndx) {
     var dim = ndx.dimension(dc.pluck('Honor'));
@@ -65,6 +70,7 @@ function show_honor_pie(ndx) {
         .group(group)
         .height(350)
         .width(300)
+        .slicesCap(5)
         .radius(200)
         .transitionDuration(1500);
         
