@@ -3,11 +3,14 @@ queue()
     .await(makeGraphs);
 
 function print_filter(filter) {
-    var f=eval(filter);
-    if (typeof(f.length) != "undefined") {}else{}
-    if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
-    if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
-    console.log(filter+"("+f.length+") = "+JSON.stringify(f).replace("[","[\n\t").replace(/}\,/g,"},\n\t").replace("]","\n]"));
+    var f = eval(filter);
+    if (typeof(f.length) != "undefined") {}
+    else {}
+    if (typeof(f.top) != "undefined") { f = f.top(Infinity); }
+    else {}
+    if (typeof(f.dimension) != "undefined") { f = f.dimension(function(d) { return ""; }).top(Infinity); }
+    else {}
+    console.log(filter + "(" + f.length + ") = " + JSON.stringify(f).replace("[", "[\n\t").replace(/}\,/g, "},\n\t").replace("]", "\n]"));
 }
 
 
@@ -16,7 +19,7 @@ function makeGraphs(error, archiveData) {
 
 
     show_country_pie(ndx);
-   // show_category_pie(ndx);
+    // show_category_pie(ndx);
     show_honor_pie(ndx);
     //show_category_bar(ndx);
     show_category_bar2(ndx);
@@ -30,19 +33,19 @@ function show_country_pie(ndx) {
     var group = dim.group();
 
     dc.pieChart("#country-chart")
-       // .externalLabels(50)
-       // .drawPaths(true)
-       // .slicesCap(4)
-       // .externalRadiusPadding(50)
+        // .externalLabels(50)
+        // .drawPaths(true)
+        // .slicesCap(4)
+        // .externalRadiusPadding(50)
         .dimension(dim)
         .group(group)
         .height(350)
         .width(300)
         .radius(200)
         .transitionDuration(1500);
-        
-        
-        // print_filter(group);
+
+
+    // print_filter(group);
 }
 
 /* function show_category_pie(ndx) {
@@ -73,12 +76,12 @@ function show_honor_pie(ndx) {
         .slicesCap(5)
         .radius(200)
         .transitionDuration(1500);
-        
-        //print_filter(group);
-        
+
+    //print_filter(group);
+
 }
 
- /* function show_category_bar(ndx) {
+/* function show_category_bar(ndx) {
     var categoryDimension= ndx.dimension(function(d){ return d.category});
     var categoryGroup = categoryDimension.group();
     
@@ -98,16 +101,16 @@ function show_category_bar2(ndx) {
     var dim = ndx.dimension(dc.pluck('Category'));
     var group = dim.group();
 
- dc.barChart("#bar-chart")
+    dc.barChart("#bar-chart")
         .width(1000)
         .height(250)
         .dimension(dim)
         .group(group)
         .x(d3.scale.ordinal().domain(["Politics", "War", "Technology", "Economics", "Space", "Diplomacy", "Media", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
         .xUnits(dc.units.ordinal)
-       // .gap(10);
+        // .gap(10);
         .barPadding(0.2);
-        
-         print_filter(group);
+
+   // print_filter(group);
 
 }
