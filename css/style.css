@@ -23,3 +23,13 @@ img {
     padding-bottom: 20px;
 }
 
+/* Reset button */
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+#honor-chart {
+    float: right;
+}
+

@@ -73,8 +73,11 @@ function show_honor_pie(ndx) {
         .group(group)
         .height(350)
         .width(300)
-        .slicesCap(5)
+      //  .slicesCap(5)
+        .legend(dc.legend())
+       // .innerRadius(100)
         .radius(200)
+       // .useViewBoxResizing(true)
         .transitionDuration(1500);
 
     //print_filter(group);
