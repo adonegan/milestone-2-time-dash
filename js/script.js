@@ -38,7 +38,7 @@ function show_honor_pie(ndx) {
     //  var group = dim.group().reduceCount();
 
 
-  //  dc.pieChart("#honor-chart")
+    dc.pieChart("#honor-chart")
         .dimension(dim)
         .group(group)
         .height(300)
