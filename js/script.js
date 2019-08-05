@@ -23,8 +23,6 @@ function makeGraphs(error, archiveData) {
     show_honor_pie(ndx);
     show_country_pie(ndx);
     show_category_bar(ndx);
-  //  show_text_widget(ndx);
-    
 
     dc.renderAll();
 }
@@ -33,24 +31,24 @@ function makeGraphs(error, archiveData) {
 /* Honor function */
 
 function show_honor_pie(ndx) {
-     var dim = ndx.dimension(dc.pluck('Honor'));
-     var group = dim.group();
-    
-  //  var dim = ndx.dimension(function(d) { return d.Honor; });
-  //  var group = dim.group().reduceCount();
-    
+    var dim = ndx.dimension(dc.pluck('Honor'));
+    var group = dim.group();
+
+    //  var dim = ndx.dimension(function(d) { return d.Honor; });
+    //  var group = dim.group().reduceCount();
+
 
     dc.pieChart("#honor-chart")
         .dimension(dim)
         .group(group)
         .height(350)
-        .width(300)
-      //.slicesCap(5)
-      //.innerRadius(100)
+        .width(700)
+        //.slicesCap(5)
+        //.innerRadius(100)
         .radius(200)
-       // .useViewBoxResizing(true)
+        .useViewBoxResizing(false)
         .transitionDuration(1500)
-        .legend(dc.legend().x(1).y(0).itemHeight(15).gap(5));
+        .legend(dc.legend());
 
     //print_filter(group);
 
@@ -70,7 +68,7 @@ function show_country_pie(ndx) {
         .dimension(dim)
         .group(group)
         .height(350)
-        .width(300)
+        .width(700)
         .radius(200)
         .transitionDuration(1500);
 
@@ -94,38 +92,8 @@ function show_category_bar(ndx) {
         // .gap(10);
         .barPadding(0.2);
 
-   // print_filter(group);
+    // print_filter(group);
 
 }
 
-/*function show_text_widget(ndx) {
-    var dim = ndx.dimension(function (d) { return d.Name + ' ' + d.Title; });
-    
-    
-   var chart = dc.textFilterWidget("#search")
-        .dimension(dim);
-        
-         var i = 0;
-         
-    dc.dataTable('.dc-data-grid')
-        .dimension(dim)
-        .showSections(false)
-        .columns([
-            function (d) {
-                i = i + 1;
-                return i;
-            },
-            function (d) {
-                return d.Name;
-            },
-            function (d) {
-                return d.Title;
-            }])
-        .on('renderlet', function (c) {
-            i = 0;
-        });
-        
-    print_filter(group);
 
-}
-*/
