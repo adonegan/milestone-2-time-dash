@@ -16,21 +16,20 @@
     <script type="text/javascript" src="js/queue.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
-
-
     <title>Time Magazine's Person of the Year, 1927 - Present</title>
+    
 </head>
 
 <body>
 
-    <!-------------------------------- Bootstrap Journal Theme ------------------------------------------------------>
+<!--------------------------------- Navbar ------------------------------------------------------>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Time Magazine</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+  
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -43,8 +42,8 @@
         </div>
     </nav>
 
+<!-------------------------------------- Title & Reset button ---------------------------------->
 
-    <!----------------------- Title --------------------------------->
     <div class="container">
         <div class="row">
             <div class="col-sm-4 col-md-6 col-lg-10">
@@ -54,6 +53,8 @@
             <div class="col-sm-4 col-md-6 col-lg-2">
                 <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary">Reset All</a>
             </div>
+            
+<!------------------------------------------- Introductory home text --------------------------------------->
 
             <div>
                 Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time that features and profiles a person, a group, an idea, or an object that "for better or for worse... has done the most
@@ -64,43 +65,33 @@
         </div>
     </div>
 
-    <!------------------------------------------- Pie chart --------------------------------------->
+<!------------------------------------------- Honor Pie --------------------------------------->
 
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
+                <h4>By Honor</h4>
+                <div id="honor-chart"></div>
+                
+<!------------------------------------------- Country Pie --------------------------------------->
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <h4>By Country</h4>
                 <div id="country-chart"></div>
             </div>
-
-            <!-------------   <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h4>By Category</h4>
-                <p>
-                    <div id="category-chart"></div>
-                </p>
-            </div>   --------------------------------------------------------->
-
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <h4>By Honor</h4>
-                <div id="honor-chart"></div>
-            </div>
         </div>
-        <!-------------------------------- 2 August --------------------------->
+        
+<!------------------------------------------- Category Bar --------------------------------------->
+
         <div class="row">
             <div class="col-sm-1 col-md-12 col-lg-12">
                 <h4>By Category</h4>
                 <div id="bar-chart">
                 </div>
             </div>
-            <p>
-                <!-------------------------------- 3 August --------------------------->
-
         </div>
-
-        <!--------------------- Category ----------------------------------------->
-
-
+    </div>
 
 </body>
 
