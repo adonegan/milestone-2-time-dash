@@ -16,20 +16,20 @@
     <script type="text/javascript" src="js/queue.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
-    <title>Time Magazine's Person of the Year, 1927 - Present</title>
-    
+    <title>Time Magazine's Person of the Year, 1927 - 2016</title>
+
 </head>
 
 <body>
 
-<!--------------------------------- Navbar ------------------------------------------------------>
+    <!--------------------------------- Navbar ------------------------------------------------------>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Time Magazine</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -42,19 +42,19 @@
         </div>
     </nav>
 
-<!-------------------------------------- Title & Reset button ---------------------------------->
+    <!-------------------------------------- Title & Reset button ---------------------------------->
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 col-md-6 col-lg-10">
-                <div id="nav-name">Person of the Year, 1927 - Present</div>
+            <div class="col-sm-8 col-md-6 col-lg-10">
+                <div id="nav-name">Person of the Year, 1927 - 2016</div>
             </div>
 
             <div class="col-sm-4 col-md-6 col-lg-2">
                 <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary">Reset All</a>
             </div>
-            
-<!------------------------------------------- Introductory home text --------------------------------------->
+
+            <!------------------------------------------- Introductory home text --------------------------------------->
 
             <div>
                 Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time that features and profiles a person, a group, an idea, or an object that "for better or for worse... has done the most
@@ -65,34 +65,54 @@
         </div>
     </div>
 
-<!------------------------------------------- Honor Pie --------------------------------------->
+    <!------------------------------------------- Honor Pie --------------------------------------->
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-8">
                 <h4>By Honor</h4>
                 <div id="honor-chart"></div>
-                
-<!------------------------------------------- Country Pie --------------------------------------->
-
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+
+            <!------------------------------------------- Country Pie --------------------------------------->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
                 <h4>By Country</h4>
                 <div id="country-chart"></div>
             </div>
-        </div>
-        
-<!------------------------------------------- Category Bar --------------------------------------->
 
-        <div class="row">
-            <div class="col-sm-1 col-md-12 col-lg-12">
-                <h4>By Category</h4>
-                <div id="bar-chart">
+            <!------------------------------------------- Category Bar --------------------------------------->
+
+            <div class="row">
+                <div class="col-sm-1 col-md-12 col-lg-12">
+                    <h4>By Category</h4>
+                    <div id="bar-chart"></div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!------------------------------------------- Data Table --------------------------------------->
+<p></p>
+        <div class="row">
+            <div class="col-sm-1 col-md-12 col-lg-12">
+                <h4>By Text</h4>
+
+                <div id="search"></div>
+               
+                    <table class="table dc-data-grid">
+                        <thead>
+                            <tr class=header>
+                                <th>Number</th>
+                                <th>Name</th>
+                                <th>Title</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+    <p></p>
 </body>
 
 </html>

@@ -23,29 +23,34 @@ function makeGraphs(error, archiveData) {
     show_honor_pie(ndx);
     show_country_pie(ndx);
     show_category_bar(ndx);
+  //  show_text_widget(ndx);
+    
 
     dc.renderAll();
-
 }
 
 
 /* Honor function */
 
 function show_honor_pie(ndx) {
-    var dim = ndx.dimension(dc.pluck('Honor'));
-    var group = dim.group();
+     var dim = ndx.dimension(dc.pluck('Honor'));
+     var group = dim.group();
+    
+  //  var dim = ndx.dimension(function(d) { return d.Honor; });
+  //  var group = dim.group().reduceCount();
+    
 
     dc.pieChart("#honor-chart")
         .dimension(dim)
         .group(group)
         .height(350)
         .width(300)
-      //  .slicesCap(5)
-       // .innerRadius(100)
+      //.slicesCap(5)
+      //.innerRadius(100)
         .radius(200)
        // .useViewBoxResizing(true)
         .transitionDuration(1500)
-        .legend(dc.legend());
+        .legend(dc.legend().x(1).y(0).itemHeight(15).gap(5));
 
     //print_filter(group);
 
@@ -92,3 +97,35 @@ function show_category_bar(ndx) {
    // print_filter(group);
 
 }
+
+/*function show_text_widget(ndx) {
+    var dim = ndx.dimension(function (d) { return d.Name + ' ' + d.Title; });
+    
+    
+   var chart = dc.textFilterWidget("#search")
+        .dimension(dim);
+        
+         var i = 0;
+         
+    dc.dataTable('.dc-data-grid')
+        .dimension(dim)
+        .showSections(false)
+        .columns([
+            function (d) {
+                i = i + 1;
+                return i;
+            },
+            function (d) {
+                return d.Name;
+            },
+            function (d) {
+                return d.Title;
+            }])
+        .on('renderlet', function (c) {
+            i = 0;
+        });
+        
+    print_filter(group);
+
+}
+*/
