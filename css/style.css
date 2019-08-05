@@ -29,4 +29,12 @@ img {
     margin-top: 20px;
 }
 
+#country-chart {
+    margin-right: 20px;
+}
 
+.pie-title {
+    text-align: center;
+    padding-bottom: 20px;
+    
+}

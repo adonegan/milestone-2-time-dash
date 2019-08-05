@@ -41,14 +41,14 @@ function show_honor_pie(ndx) {
     dc.pieChart("#honor-chart")
         .dimension(dim)
         .group(group)
-        .height(350)
-        .width(700)
+        .height(300)
+        .width(650)
         //.slicesCap(5)
         //.innerRadius(100)
-        .radius(200)
+        .radius(150)
         .useViewBoxResizing(false)
         .transitionDuration(1500)
-        .legend(dc.legend());
+        .legend(dc.legend().x(0).y(0).itemHeight(16).gap(3));
 
     //print_filter(group);
 
@@ -61,17 +61,18 @@ function show_country_pie(ndx) {
     var group = dim.group();
 
     dc.pieChart("#country-chart")
-        // .externalLabels(50)
-        // .drawPaths(true)
-        // .slicesCap(4)
-        // .externalRadiusPadding(50)
+        .externalLabels(50)
+       // .drawPaths(true)
+      //  .slicesCap(20)
+       // .innerRadius(50)
+        //  .externalRadiusPadding(50)
         .dimension(dim)
         .group(group)
-        .height(350)
-        .width(700)
-        .radius(200)
-        .transitionDuration(1500);
-
+        .height(300)
+        .width(650)
+        .radius(150)
+        .transitionDuration(1500)
+        .legend(dc.legend().x(40).y(0).itemHeight(16).gap(3));
 
     // print_filter(group);
 }
@@ -89,11 +90,9 @@ function show_category_bar(ndx) {
         .group(group)
         .x(d3.scale.ordinal().domain(["Politics", "War", "Technology", "Economics", "Space", "Diplomacy", "Media", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
         .xUnits(dc.units.ordinal)
-        // .gap(10);
+        //.gap(10);
         .barPadding(0.2);
 
     // print_filter(group);
 
 }
-
-
