@@ -1,3 +1,11 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
 #nav-name {
     font-size: 32px;
     font-weight: bold;
@@ -36,5 +44,21 @@ img {
 .pie-title {
     text-align: center;
     padding-bottom: 20px;
-    
+}
+
+/* Responsive scrolling */
+
+.honor {
+    width: 100%;
+    overflow: scroll;
+}
+
+.country {
+    width: 100%;
+    overflow: scroll;
+}
+
+.bar-category {
+    width: 100%;
+    overflow: scroll;
 }
