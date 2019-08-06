@@ -48,7 +48,7 @@ function show_honor_pie(ndx) {
         .radius(150)
         .useViewBoxResizing(false)
         .transitionDuration(1500)
-        .legend(dc.legend().x(0).y(0).itemHeight(16).gap(3));
+        .legend(dc.legend().x(0).y(0).itemHeight(16).gap(2));
 
     //print_filter(group);
 
@@ -68,11 +68,11 @@ function show_country_pie(ndx) {
         //  .externalRadiusPadding(50)
         .dimension(dim)
         .group(group)
-        .height(300)
+        .height(450)
         .width(650)
         .radius(150)
         .transitionDuration(1500)
-        .legend(dc.legend().x(40).y(0).itemHeight(16).gap(3));
+        .legend(dc.legend().x(0).y(0).itemHeight(16).gap(2));
 
     // print_filter(group);
 }
