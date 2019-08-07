@@ -77,6 +77,7 @@ img {
 .bar-category {
     width: 100%;
     overflow: scroll;
+    padding-bottom: 50px;
 }
 
 /* ------------------------------------------ Chart styling*/
@@ -84,3 +85,15 @@ img {
 #honor-chart {
     padding-bottom: 50px;
 }
+
+
+
+.table-data {
+    width: 100%;
+    overflow: scroll;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+

@@ -24,7 +24,7 @@ function makeGraphs(error, archiveData) {
     show_country_pie(ndx);
     show_category_bar(ndx);
     show_year_selector(ndx);
-  //  show_full_table(ndx);
+    show_full_table(ndx);
 
     dc.renderAll();
 }
@@ -64,9 +64,9 @@ function show_country_pie(ndx) {
 
     dc.pieChart("#country-chart")
         .externalLabels(50)
-       // .drawPaths(true)
-      //  .slicesCap(20)
-       // .innerRadius(50)
+        // .drawPaths(true)
+        //  .slicesCap(20)
+        // .innerRadius(50)
         //  .externalRadiusPadding(50)
         .dimension(dim)
         .group(group)
@@ -100,8 +100,6 @@ function show_category_bar(ndx) {
 }
 
 
-
-
 function show_year_selector(ndx) {
     let dim = ndx.dimension(dc.pluck('Year'));
     let group = dim.group();
@@ -114,5 +112,79 @@ function show_year_selector(ndx) {
 }
 
 
-//function show_full_table(ndx) {
+function show_full_table(ndx) {
+
+ var dim = ndx.dimension(function(d) { return d.dim; });
+ 
+ 
+ var table = dc.dataTable("#dc-data-table")
+ 
+        .dimension(dim)
+        .width(200)
+        .height(200)
+        .group(function(d) { return ""; })
+        .size(5)
+        .columns([
+            function(d) { return d.Year; },
+            function(d) { return d.Honor; },
+            function(d) { return d.Name; },
+            function(d) { return d.Title; },
+            function(d) { return d.Category; },
+            function(d) { return d.Country; },
+            function(d) { return d.Context; },
+        ]).sortBy(function(d) {
+            return d.Year; 
+        })
+        .order(d3.ascending)
+        .on('preRender', update_offset)
+        .on('preRedraw', update_offset)
+        .on('pretransition', display);
+        
+            var ofs = 0, pag = 7;
+
+    function update_offset() {
+        var totFilteredRecs = ndx.groupAll().value();
+        var end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+        ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
+        ofs = ofs < 0 ? 0 : ofs;
+        table.beginSlice(ofs); 
+        table.endSlice(ofs + pag);
+        
+}
+
+function display() {
+        var totFilteredRecs = ndx.groupAll().value();
+        var end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+        d3.select('#begin')
+            .text(end === 0 ? ofs : ofs + 1);
+        d3.select('#end')
+            .text(end);
+        d3.select('#last')
+            .attr('disabled', ofs - pag < 0 ? 'true' : null);
+        d3.select('#next')
+            .attr('disabled', ofs + pag >= totFilteredRecs ? 'true' : null);
+        d3.select('#size').text(totFilteredRecs);
+        if (totFilteredRecs != ndx.size()) {
+            d3.select('#totalsize').text("(filtered Total: " + ndx.size() + " )");
+        }
+        else {
+            d3.select('#totalsize').text('');
+        }
+    }
+
+    $('#next').on('click', function() {
+        ofs += pag;
+        update_offset();
+        table.redraw();
+    });
+    /* Event Listener function that fires when "next" HTML btn is clicked */  
+
+
+    $('#last').on('click', function() {
+        ofs -= pag;
+        update_offset();
+        table.redraw();
+    });
+
+}
 
