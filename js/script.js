@@ -24,6 +24,7 @@ function makeGraphs(error, archiveData) {
     show_country_pie(ndx);
     show_category_bar(ndx);
     show_year_selector(ndx);
+  //  show_full_table(ndx);
 
     dc.renderAll();
 }
@@ -109,9 +110,9 @@ function show_year_selector(ndx) {
         .dimension(dim)
         .group(group)
         .promptText("All years")
-        .multiple(false)
-       // .title(function(d) {
-          //  return d.Year;
-       // });
+        .multiple(false);
 }
+
+
+//function show_full_table(ndx) {
 
