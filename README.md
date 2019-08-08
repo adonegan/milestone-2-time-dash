@@ -42,3 +42,4 @@ country the winners are from.
 * Crossfilter for Data Science Essential Training - Emma Saunders, LinkedIn Learning
 * DC.js for Data Science Essential Training - Emma Saunders, LinkedIn Learning
 * https://dc-js.github.io/dc.js/examples/
+* https://robsimons1.github.io/global-white-shark-attack-dashboard/

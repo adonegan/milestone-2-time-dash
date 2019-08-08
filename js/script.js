@@ -87,13 +87,17 @@ function show_category_bar(ndx) {
 
     dc.barChart("#bar-chart")
         .width(1000)
-        .height(250)
+        .height(300)
         .dimension(dim)
         .group(group)
-        .x(d3.scale.ordinal().domain(["Politics", "War", "Technology", "Economics", "Space", "Diplomacy", "Media", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
+        .margins({ top: 15, right: 50, bottom: 80, left: 50 })
+        .xAxisLabel("Category")
+        .yAxisLabel("Number")
+        .x(d3.scale.ordinal().domain(["Media", "War", "Technology", "Economics", "Space", "Diplomacy", "Politics", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
         .xUnits(dc.units.ordinal)
         //.gap(10);
-        .barPadding(0.2);
+        .barPadding(0.2)
+        .renderHorizontalGridLines(true);
 
     // print_filter(group);
 
@@ -115,7 +119,6 @@ function show_year_selector(ndx) {
 function show_full_table(ndx) {
 
  var dim = ndx.dimension(function(d) { return d.dim; });
- 
  
  var table = dc.dataTable("#dc-data-table")
  
