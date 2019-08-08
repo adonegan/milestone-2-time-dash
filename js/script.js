@@ -123,7 +123,7 @@ function show_full_table(ndx) {
         .width(200)
         .height(200)
         .group(function(d) { return ""; })
-        .size(5)
+        .size(Infinity)
         .columns([
             function(d) { return d.Year; },
             function(d) { return d.Honor; },
