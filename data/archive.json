@@ -1142,5 +1142,27 @@
     "Title": "President of the United States",
     "Category": "Politics",
     "Context": "Presidential Election"
+  },
+  {
+    "Year": 2017,
+    "Honor": "Person of the Year",
+    "Name": "The Silence Breakers",
+    "Country": "",
+    "Birth Year": "",
+    "Death Year": "",
+    "Title": "",
+    "Category": "Society",
+    "Context": "#MeToo Movement"
+  },
+  {
+    "Year": 2018,
+    "Honor": "Person of the Year",
+    "Name": "The Guardians",
+    "Country": "",
+    "Birth Year": "",
+    "Death Year": "",
+    "Title": "",
+    "Category": "Media",
+    "Context": "War on Truth"
   }
 ]
