@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: white;
 }
 
 .container-fluid {
@@ -61,6 +60,12 @@ img {
     padding-bottom: 20px;
 }
 
+
+.intro-text {
+    padding-top: 40px;
+}
+
+
 /* ------------------------------------------ Responsive scrolling*/
 
 .honor {
@@ -104,7 +109,7 @@ img {
 
 .box-cover {
     border: 20px solid #D62503;
-    color: #D62503;
+    color: black;
     margin-top: 50px;
 }
 
@@ -122,8 +127,6 @@ img {
     font-size: 120px;
     font-family: serif;
     text-align: center;
+    color: black;
 }
-
-
-
 
