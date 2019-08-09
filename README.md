@@ -6,6 +6,8 @@ You will find bar charts, line charts, pie charts and tables to show this data.
 
 ## UX
 
+![responsiveness.png](/images/responsiveness.png)
+
 This website is for people who enjoy reading Time magazine and like the annual Person of the Year feature.
 They want to know who the previous winners of the honor are, what year they won, from what categories and
 country the winners are from.
@@ -17,7 +19,6 @@ country the winners are from.
 * User story 5: As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
 
 ### Wireframes
-![responsiveness.png](/images/responsiveness.png)
 
 ## Features
 
