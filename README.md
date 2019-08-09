@@ -17,8 +17,7 @@ country the winners are from.
 * User story 5: As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
 
 ### Wireframes
-Inline-style: 
-![alt text](https://github.com/adonegan/milestone2-dashboard/blob/master/images/responsiveness.png "Logo Title Text 1")
+![responsiveness.png](/images/responsiveness.png)
 
 ## Features
 
