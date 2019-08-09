@@ -90,7 +90,7 @@ function show_category_bar(ndx) {
         .height(300)
         .dimension(dim)
         .group(group)
-        .margins({ top: 15, right: 50, bottom: 80, left: 50 })
+        .margins({ top: 50, right: 50, bottom: 50, left: 50 })
         .xAxisLabel("Category")
         .yAxisLabel("Number")
         .x(d3.scale.ordinal().domain(["Media", "War", "Society", "Technology", "Economics", "Space", "Diplomacy", "Politics", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
