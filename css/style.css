@@ -107,6 +107,13 @@ img {
     background-color: #D62503;
 }
 
+.nav-item {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
 .box-cover {
     border: 20px solid #D62503;
     color: black;
