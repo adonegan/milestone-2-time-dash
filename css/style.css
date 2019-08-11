@@ -138,3 +138,40 @@ img {
     color: black;
 }
 
+
+
+
+
+.mover {
+  width: 50px;
+  height: 50px;
+  background: #f06d06;
+  border-radius: 50%;
+  animation: move 3s infinite ease-in-out;
+}
+
+@keyframes move {
+  20%, 100% {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+.area {
+  width: 800px;
+  height: 1000px;
+  margin: 0 auto;
+  border: 10px solid #D62503;
+ /* border-radius: 50px; */
+}
+
+
+/* body {
+  padding: 20px;
+} */
