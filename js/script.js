@@ -94,7 +94,7 @@ function show_category_bar(ndx) {
         .margins({ top: 50, right: 50, bottom: 50, left: 50 })
         .xAxisLabel("Category")
         .yAxisLabel("Number")
-        .x(d3.scale.ordinal().domain(["Media", "War", "Society", "Technology", "Economics", "Space", "Diplomacy", "Politics", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", ""]))
+        .x(d3.scale.ordinal().domain(["Media", "War", "Society", "Technology", "Economics", "Space", "Diplomacy", "Politics", "Space", "Revolution", "Environment", "Religion", "Philanthropy", "Science", "Aviation"]))
         .xUnits(dc.units.ordinal)
         //.gap(10);
         .barPadding(0.2)
