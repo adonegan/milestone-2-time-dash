@@ -47,6 +47,7 @@ function show_honor_pie(ndx) {
         .width(650)
         //.slicesCap(5)
         //.innerRadius(100)
+       // .colorAccessor(function(d) {return d.value})
         .radius(150)
         .useViewBoxResizing(false)
         .transitionDuration(1500)
