@@ -149,7 +149,7 @@ img {
 
 /* Function style */
 
-/* W3Schools code */
+/********************** W3Schools code **************************/
 
 button {
   background-color: #D62503;
@@ -176,14 +176,17 @@ button {
 .button-instructions:hover {
   background-color: #D62503;
   color: white;
+  border: 2px solid #D62503;
   border-radius: 8px;
 } 
 
 #instructions-fade {
     display: none;
-    width: 1110px;
-    height: 65px;
     color: black;
-    background-color: #DCDCDC;
+    background-color: #FFDAB9;
     margin-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
 }

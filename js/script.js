@@ -192,14 +192,7 @@ function display() {
 
 }
 
-/* FUNCTIONS */
-
-
-//function myInstructions() {
- // document.getElementById("instructions-text").innerHTML = "Hello World";
-//}
-
-
+ // W3Schools code 
 
 $(document).ready(function(){
  $("button").click(function(){
