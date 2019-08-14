@@ -195,6 +195,14 @@ function display() {
 /* FUNCTIONS */
 
 
-function myInstructions() {
-  document.getElementById("instructions-text").innerHTML = "Hello World";
-}
+//function myInstructions() {
+ // document.getElementById("instructions-text").innerHTML = "Hello World";
+//}
+
+
+
+$(document).ready(function(){
+ $("button").click(function(){
+    $("#instructions-fade").fadeToggle();
+  });
+});
