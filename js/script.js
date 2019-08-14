@@ -194,3 +194,7 @@ function display() {
 
 /* FUNCTIONS */
 
+
+function myInstructions() {
+  document.getElementById("instructions-text").innerHTML = "Hello World";
+}
