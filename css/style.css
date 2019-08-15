@@ -40,7 +40,7 @@ nav .navbar-brand {
 }
 
 
-/* Reset button */
+/* ------------------------------------ Reset button */
 
 .btn-primary {
     margin-top: 20px;
@@ -58,9 +58,12 @@ p {
     
 }
 
+
+
+
 img {
-    height: 300px;
-    width: 300px;
+    height: 900px;
+    width: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -73,6 +76,8 @@ img {
     text-align: center;
     padding-bottom: 20px;
     font-size: 30px;
+    border: 0.5px solid gray;
+    padding-top: 10px;
 }
 
 .intro-text {
@@ -224,3 +229,78 @@ footer {
     font-family: sans-serif;
 }
 
+
+/* ------------------------------------------ jQuery Slide, W3Schools */
+
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+
+
+
+#panel-1, #flip-1 {
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #c3c3c3;
+}
+
+#panel-1 {
+  padding: 50px;
+  display: none;
+}
+
+
+
+
+#panel-2, #flip-2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #c3c3c3;
+}
+
+#panel-2 {
+  padding: 50px;
+  display: none;
+}
+
+
+
+
+#panel-3, #flip-3 {
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #c3c3c3;
+}
+
+#panel-3 {
+  padding: 50px;
+  display: none;
+}
+
+
+
+
+#panel-4, #flip-4 {
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #c3c3c3;
+}
+
+#panel-4 {
+  padding: 50px;
+  display: none;
+}
