@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Open Sans:100,200,300,400,500,600,700|Exo:100,200,300,400,500');
+
+
 body {
     position: relative;
     margin: 0;
@@ -18,14 +22,32 @@ body {
       margin-left: auto; 
 }
 
+
 /* ------------------------------------------ Navbar*/
+
+
+nav .navbar-brand {
+    font-size: 35px;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+}
 
 #nav-name {
     font-size: 32px;
-    font-weight: bold;
+    font-family: 'Open Sans';
+    font-weight: 300;
     text-align: center;
-    font-family: sans-serif;
-    margin: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+/* Reset button */
+
+.btn-dark {
+    margin-top: 50px;
 }
 
 h2 {
@@ -36,6 +58,9 @@ h2 {
 
 p {
     padding-top: 20px;
+    font-family: 'Open Sans';
+    font-weight: 100;
+    
 }
 
 img {
@@ -45,11 +70,7 @@ img {
     padding-bottom: 20px;
 }
 
-/* Reset button */
 
-.btn-primary {
-    margin-top: 20px;
-}
 
 #country-chart {
     margin-right: 20px;
@@ -58,6 +79,11 @@ img {
 .pie-title {
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding-top: 20px;
 }
 
 
@@ -171,6 +197,10 @@ button {
   color: white; 
   border: 2px solid black;
   border-radius: 8px;
+  float: right;
+  margin-bottom: 30px;
+  margin-right: 65px;
+
 } 
 
 .button-instructions:hover {
@@ -178,6 +208,9 @@ button {
   color: white;
   border: 2px solid #D62503;
   border-radius: 8px;
+  float: right;
+  margin-bottom: 30px;
+  margin-right: 65px;
 } 
 
 #instructions-fade {
@@ -191,7 +224,9 @@ button {
     text-align: justify;
 }
 
-
-
-
+footer {
+    height: 130px;
+    width: 100%;
+    background-color: #D62503;
+}
 
