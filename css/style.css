@@ -39,8 +39,8 @@ p {
 }
 
 img {
-    height: 100px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -149,7 +149,7 @@ img {
 
 /* Function style */
 
-/********************** W3Schools code **************************/
+/* ------------------------------------------ W3Schools code */
 
 button {
   background-color: #D62503;
@@ -185,8 +185,13 @@ button {
     color: black;
     background-color: #FFDAB9;
     margin-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: justify;
 }
+
+
+
+
+

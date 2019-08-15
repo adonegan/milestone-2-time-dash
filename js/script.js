@@ -65,6 +65,7 @@ function show_country_pie(ndx) {
 
     dc.pieChart("#country-chart")
         .externalLabels(50)
+      //  .colors(d3.scale.ordinal().range(["#3182bc", "#fd8c3d", "#e6550e"]))
         // .drawPaths(true)
         //  .slicesCap(20)
         // .innerRadius(50)
@@ -184,7 +185,7 @@ function display() {
     /* Event Listener function that fires when "next" HTML btn is clicked */  
 
 
-    $('#last').on('click', function() {
+    $('#prev').on('click', function() {
         ofs -= pag;
         update_offset();
         table.redraw();
@@ -196,6 +197,8 @@ function display() {
 
 $(document).ready(function(){
  $("button").click(function(){
-    $("#instructions-fade").fadeToggle();
+    $("#instructions-fade").fadeToggle("slow");
   });
 });
+
+
