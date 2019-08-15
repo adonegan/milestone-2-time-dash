@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500');
+
+
 body {
     position: relative;
     margin: 0;
@@ -23,14 +26,17 @@ body {
 
 
 nav .navbar-brand {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
+    font-family: 'Merriweather';
+    font-weight: 500;
    /* margin: auto; */
 }
 
 #nav-name {
     font-size: 32px;
     margin-top: 20px;
+    text-align: center;
 }
 
 
@@ -66,6 +72,7 @@ img {
 .pie-title {
     text-align: center;
     padding-bottom: 20px;
+    font-size: 30px;
 }
 
 .intro-text {
@@ -176,7 +183,7 @@ button {
   border-radius: 8px;
   float: right;
   margin-bottom: 30px;
-  margin-right: 65px;
+  margin-top: 30px;
 
 } 
 
@@ -187,7 +194,7 @@ button {
   border-radius: 8px;
   float: right;
   margin-bottom: 30px;
-  margin-right: 65px;
+  margin-top: 30px;
 } 
 
 #instructions-fade {
@@ -199,6 +206,7 @@ button {
     padding-left: 30px;
     padding-right: 30px;
     text-align: justify;
+    border-radius: 8px;
 }
 
 footer {

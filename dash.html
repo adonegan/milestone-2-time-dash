@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css" type="text/css" /> 
     <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@
 
     <!--------------------------------- Navbar ------------------------------------------------------>
 
-     <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Time</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">HOME </a> 
+                    <a class="nav-link" href="home.html">HOME </a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="dash.html">DASH<span class="sr-only">(current)</span></a>
@@ -62,104 +62,106 @@
             <div class="col-sm-2 col-md-3 col-lg-2">
                 <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset All</a>
             </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
 
             <!------------------------------------------- Introductory home text --------------------------------------->
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-9">
                 <p class="intro-text-dash">Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time that features and profiles a person, a group, an idea, or an object that "for better or for worse...
                     has done the most to influence the events of the year". (- Wikipedia)</p>
             </div>
 
             <!------------------------------------------- Instructions with button --------------------------------------->
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-12 col-lg-4"></div>
-                    <div class="col-sm-6 col-md-12 col-lg-4">
-                        <button class="button-instructions">Instructions first!</button>
-                    </div>
-                    <div class="col-sm-1 col-md-12 col-lg-12">
-                        <div id="instructions-fade">
-                            <p>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
-                                <p></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-12 col-lg-4"></div>
-                </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <button class="button-instructions">Instructions first!</button>
             </div>
-
-            <!------------------------------------------- Honor Pie --------------------------------------->
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-12 col-lg-6">
-                        <h4 class="pie-title">By Honor</h4>
-                        <div class="honor">
-                            <div id="honor-chart"></div>
-                        </div>
-                    </div>
-                    <!------------------------------------------- Country Pie --------------------------------------->
-                    <div class="col-sm-6 col-md-12 col-lg-6">
-                        <h4 class="pie-title">By Country</h4>
-                        <div class="country">
-                            <div id="country-chart"></div>
-                        </div>
-                    </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="instructions-fade">
+                    <p>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
+                        <p></p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!------------------------------------------- Honor Pie --------------------------------------->
 
 
-
-        <!------------------------------------------- Category Bar & Menu Selector --------------------------------------->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-10">
-                    <h4 class="pie-title">By Category</h4>
-                    <div class="bar-category">
-                        <div id="bar-chart"></div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+                <h4 class="pie-title">By Honor</h4>
+                <div class="honor">
+                    <div id="honor-chart"></div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-2">
-                    <h4 class="pie-title">By Year</h4>
-                    <div class="year">
-                        <div id="year-selector"></div>
-                    </div>
+            </div>
+            <!------------------------------------------- Country Pie --------------------------------------->
+            <div class="col-sm-6 col-md-12 col-lg-6">
+                <h4 class="pie-title">By Country</h4>
+                <div class="country">
+                    <div id="country-chart"></div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
 
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-1 col-md-12 col-lg-12">
-                    <h4 class="pie-title">Table data</h4>
-                    <div class="table-data">
-                        <table id="dc-data-table" class="table">
-                    </div>
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Year</th>
-                            <th scope="col">Honor</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Country</th>
-                            <th scope="col">Context</th>
-                        </tr>
-                    </thead>
-                    </table>
-                    <div id="paging">
-                        Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
-                        <input id="prev" class="btn-primary active" type="button" value="Prev" />
-                        <input id="next" class="btn-primary active" type="button" value="Next" />
-                    </div>
+    <!------------------------------------------- Category Bar & Menu Selector --------------------------------------->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <h4 class="pie-title">By Category</h4>
+                <div class="bar-category">
+                    <div id="bar-chart"></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-2">
+                <h4 class="pie-title">By Year</h4>
+                <div class="year">
+                    <div id="year-selector"></div>
                 </div>
             </div>
         </div>
-        <p></p>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 col-md-12 col-lg-12">
+                <h4 class="pie-title">Table data</h4>
+                <div class="table-data">
+                    <table id="dc-data-table" class="table">
+                </div>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Honor</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Context</th>
+                    </tr>
+                </thead>
+                </table>
+                <div id="paging">
+                    Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
+                    <input id="prev" class="btn-primary active" type="button" value="Prev" />
+                    <input id="next" class="btn-primary active" type="button" value="Next" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
     </div>
     <!------------------------------------------- Data Table --------------------------------------->
     </div>
