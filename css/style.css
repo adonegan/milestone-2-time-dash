@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,400,500,600,700|Exo:100,200,300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Open Sans:100,200,300,400,500,600,700|Exo:100,200,300,400,500');
-
-
 body {
     position: relative;
     margin: 0;
@@ -28,26 +24,21 @@ body {
 
 nav .navbar-brand {
     font-size: 35px;
-    font-family: 'Merriweather';
-    font-weight: 900;
     text-align: center;
-    margin: auto;
+   /* margin: auto; */
 }
 
 #nav-name {
     font-size: 32px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    text-align: center;
     margin-top: 20px;
-    padding-top: 20px;
 }
 
 
 /* Reset button */
 
-.btn-dark {
-    margin-top: 50px;
+.btn-primary {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -57,9 +48,7 @@ h2 {
 }
 
 p {
-    padding-top: 20px;
-    font-family: 'Open Sans';
-    font-weight: 100;
+    padding-top: 5px;
     
 }
 
@@ -70,8 +59,6 @@ img {
     padding-bottom: 20px;
 }
 
-
-
 #country-chart {
     margin-right: 20px;
 }
@@ -79,14 +66,7 @@ img {
 .pie-title {
     text-align: center;
     padding-bottom: 20px;
-    font-family: 'Merriweather', sans-serif;
-    font-weight: 400;
-    border: 2px solid gray;
-    border-radius: 2px;
-    padding-top: 20px;
 }
-
-
 
 .intro-text {
     padding-top: 40px;
@@ -129,7 +109,6 @@ img {
     font-size: 12px;
 }
 
-
 .navbar {
     background-color: #D62503;
 }
@@ -148,7 +127,6 @@ img {
 .section {
     text-align: justify;
 }
-
 
 .box-cover {
     border: 20px solid #D62503;
@@ -179,7 +157,6 @@ img {
 
 button {
   background-color: #D62503;
-  border: none;
   color: white;
   padding: 12px 32px;
   text-align: center;
@@ -193,9 +170,9 @@ button {
 } 
 
 .button-instructions {
-  background-color: #000; 
+  background-color: #D62503; 
   color: white; 
-  border: 2px solid black;
+  border: 2px solid #D62503;
   border-radius: 8px;
   float: right;
   margin-bottom: 30px;
@@ -204,9 +181,9 @@ button {
 } 
 
 .button-instructions:hover {
-  background-color: #D62503;
+  background-color: #000;
   color: white;
-  border: 2px solid #D62503;
+  border: 2px solid #000;
   border-radius: 8px;
   float: right;
   margin-bottom: 30px;
@@ -225,8 +202,17 @@ button {
 }
 
 footer {
-    height: 130px;
+    height: 250px;
     width: 100%;
     background-color: #D62503;
+}
+
+
+#year-selector {
+    padding: 50px;
+}
+
+#dc-data-table {
+    font-family: sans-serif;
 }
 
