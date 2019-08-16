@@ -168,7 +168,7 @@ p {
 
 /* Function style */
 
-/* ------------------------------------------ W3Schools code */
+/* ------------------------------------------ Read Me! button W3Schools code */
 
 button {
   background-color: #D62503;
@@ -217,8 +217,11 @@ button {
     border-radius: 8px;
 }
 
+
+/* ------------------------------------------ Footer section */
+
 footer {
-    height: 250px;
+    height: 100px;
     width: 100%;
     background-color: #D62503;
 }
@@ -240,7 +243,7 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 2px black;
+  border: solid 2px #313030;
   border-radius: 6px;
   cursor: pointer;
   color: black;
@@ -249,7 +252,7 @@ footer {
 #panel {
   padding: 40px;
   display: none;
-  background-color: black;
+  background-color: #313030;
   color: white;
   border-radius: 6px;
   text-align: justify;
@@ -266,7 +269,7 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 2px black;
+  border: solid 2px #313030;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -274,7 +277,7 @@ footer {
 #panel-1 {
   padding: 40px;
   display: none;
-  background-color: black;
+  background-color: #313030;
   color: white;
   border-radius: 6px;
   text-align: justify;
@@ -292,7 +295,7 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 2px black;
+  border: solid 2px #313030;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -300,7 +303,7 @@ footer {
 #panel-2 {
   padding: 40px;
   display: none;
-  background-color: black;
+  background-color: #313030;
   color: white;
   border-radius: 6px;
   text-align: justify;
@@ -317,7 +320,7 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 2px black;
+  border: solid 2px #313030;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -325,7 +328,7 @@ footer {
 #panel-3 {
   padding: 40px;
   display: none;
-  background-color: black;
+  background-color: #313030;
   color: white;
   border-radius: 6px;
 }
@@ -341,7 +344,7 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 2px black;
+  border: solid 2px #313030;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -349,7 +352,7 @@ footer {
 #panel-4 {
   padding: 40px;
   display: none;
-  background-color: black;
+  background-color: #313030;
   color: white;
   border-radius: 6px;
   text-align: justify;
@@ -361,12 +364,12 @@ footer {
 }
 
 #box {
-    height: 550px;
+    height: 620px;
     width: 380px;
     border: 1px solid #313030;
     background-color: #313030;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: justify;
     margin-top: 30px;
     border-radius: 3px;
@@ -389,6 +392,34 @@ footer {
 
 .title {
     text-align: center;
+    font-weight: 500;
+}
+
+
+/* ------------------------------------------ Font Awesome icons*/
+
+.fa-trophy {
+    font-size: 50px;
+    padding-left: 42%;
+    padding-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.fa-award {
+    font-size: 50px;
+    padding-left: 42%;
+    padding-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.fa-newspaper {
+    font-size: 50px;
+    padding-left: 42%;
+    padding-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 25px;
 }
 
 
