@@ -77,9 +77,10 @@
             <div class="col-sm-12 col-md-12 col-lg-2">
                 <button class="button-instructions">Read Me!</button>
             </div>
+            
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div id="instructions-fade">
-                    <p>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
+                    <p><b>Instructions:</b><br>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
                         <p></p>
                 </div>
             </div>
@@ -130,10 +131,10 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-2">
-                
+
                 <div id="flip-3">By Year</div>
                 <div id="panel-3">Pick a year below!</div>
-               <!-- <h4 class="pie-title">By Year</h4> -->
+                <!-- <h4 class="pie-title">By Year</h4> -->
                 <div class="year">
                     <div id="year-selector"></div>
                 </div>
@@ -154,15 +155,15 @@
                 <div class="table-data">
                     <table id="dc-data-table" class="table">
                 </div>
-                <thead class="thead-dark">
+                <thead class="thead-light">
                     <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col">Honor</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Country</th>
-                        <th scope="col">Context</th>
+                        <th scope="col">YEAR</th>
+                        <th scope="col">HONOR</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">TITLE</th>
+                        <th scope="col">CATEGORY</th>
+                        <th scope="col">COUNTRY</th>
+                        <th scope="col">CONTEXT</th>
                     </tr>
                 </thead>
                 </table>
@@ -180,7 +181,9 @@
     </div>
 
     <footer>
-
+        <div class="col-sm-2 col-md-3 col-lg-2">
+            <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-dark active">Reset All</a>
+        </div>
 
     </footer>
 
