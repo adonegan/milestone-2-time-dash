@@ -54,12 +54,35 @@ exactly who won the award year by year without having to continous scroll down t
 
 ## Technologies Used
 
+HTML: This code was used to layout the structure of each page and the placement of each chart on both the Stats page and the Info page. It
+also contributed to the nav, main and footer sections of the page.
+
+CSS: This code was used to add style to the HTML specifications. CSS changes were made throughout the project in order to enhance the look 
+and feel of the site. While the background color is mostly white, I played around with different colors on the charts and toggle areas.
+
+JavaScript: JS was used to queue my charts, as reset buttons and also contributed to specific functions used to create functionality on the page.
+I also used a function called print_filter to access the DOM and see objects and the content of arrays on the page.
+
 Bootswatch: The Journal template was used initially to start with as it provided a nice base for my project. However, I've added some of
 my own CSS code from various places like Stack Overflow, CSS Tricks and Bootstrap.
+
+Crossfiilter: For my interactive charts I used crossfilter technology. In the lead up to adding the charts I also watched a LinkedIn course
+outlining how to access information in arrays that would display and filter across multiple charts.
+
+D3: This data-driven document technology was used to fuse chart data together to make the charts with the help of HTML ids. This technology 
+helped to visualise the data contained with my Kaggle dataset on Time's Person of the Year from 1927 onwards.
 
 DC: DC's library of code was used to make the charts. I took the code from the website and then charged dimensions, numbers and 
 attributes to suit my needs for those charts.
 
+jQuery: This technology was used to hide and show instructions and more information at command in a way to make the dashboard less cluttered.
+a min.js file was added to the JS folder and called above and below the code on each page. This technology also ensure nav functionality.
+
+Kaggle: This website was a great resource for finding a suitable dataset. By visiting this site I was able to browse available datasets and 
+select one based on my own interests in world affairs. Once I found my dataset, I downloaded the file for use with my charting technologies.
+
+CSV and JSON: As you can see from my project I added both json and csv data files to my documentation - this was purely for testing reasons 
+as I had difficulty access the data when I started the project. This project takes data from the .csv file only.
 
 ## Testing
 
