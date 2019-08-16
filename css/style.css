@@ -70,7 +70,9 @@ img {
 
 #country-chart {
     margin-right: 20px;
+    margin-top: 10px;
 }
+
 
 .pie-title {
     text-align: center;
@@ -109,6 +111,7 @@ img {
 
 #honor-chart {
     padding-bottom: 50px;
+    margin-top: 10px;
 }
 
 /* ------------------------------------------ Table styling*/
@@ -170,11 +173,11 @@ img {
 button {
   background-color: #D62503;
   color: white;
-  padding: 12px 32px;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
@@ -237,14 +240,25 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 1px #c3c3c3;
+  border: solid 2px black;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
 }
 
 #panel {
-  padding: 50px;
+  padding: 40px;
   display: none;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-align: justify;
 }
 
+#flip {
+    font-size: 25px;
+    font-weight: 200;
+}
 
 
 
@@ -252,12 +266,23 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 1px #c3c3c3;
+  border: solid 2px black;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #panel-1 {
-  padding: 50px;
+  padding: 40px;
   display: none;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-align: justify;
+}
+
+#flip-1 {
+    font-size: 25px;
+    font-weight: 200;
 }
 
 
@@ -267,14 +292,24 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 1px #c3c3c3;
+  border: solid 2px black;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #panel-2 {
-  padding: 50px;
+  padding: 40px;
   display: none;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-align: justify;
 }
 
+#flip-2 {
+    font-size: 25px;
+    font-weight: 200;
+}
 
 
 
@@ -282,14 +317,23 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 1px #c3c3c3;
+  border: solid 2px black;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #panel-3 {
-  padding: 50px;
+  padding: 40px;
   display: none;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
 }
 
+#flip-3 {
+    font-size: 25px;
+    font-weight: 200;
+}
 
 
 
@@ -297,10 +341,21 @@ footer {
   padding: 5px;
   text-align: center;
   background-color: #fff;
-  border: solid 1px #c3c3c3;
+  border: solid 2px black;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #panel-4 {
-  padding: 50px;
+  padding: 40px;
   display: none;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  text-align: justify;
+}
+
+#flip-4 {
+    font-size: 25px;
+    font-weight: 200;
 }
