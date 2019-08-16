@@ -61,12 +61,12 @@ p {
 
 
 
-img {
+/* img {
     height: 900px;
     width: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
 
 #country-chart {
     margin-right: 20px;
@@ -359,3 +359,37 @@ footer {
     font-size: 25px;
     font-weight: 200;
 }
+
+#box {
+    height: 550px;
+    width: 380px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+
+.img-fluid {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 480px;
+    width: 380px;
+}
+
+.img-poy {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 550px;
+    width: 800px;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
