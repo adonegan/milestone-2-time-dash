@@ -18,8 +18,6 @@
     <script type="text/javascript" src="js/queue.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
-
-
     <title>Time Magazine's Person of the Year, 1927 - Present</title>
 
 </head>
@@ -54,25 +52,31 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <p class="intro-text-dash">Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time that features and profiles a person, a group, an idea, or an object that "for better or for worse...
-                    has done the most to influence the events of the year". (- Wikipedia)</p>
+                <p class="intro-text-dash">Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time. It profiles a person, a group, an idea, or an object that "for better or for worse" 
+                    has done the most to influence the events of the year. </p>
+                    <p class="intro-text-dash">Use the charts below to see who has won from the perspective of the honor, the country, the category, and the year. Check out the table below for all details too! The Info page gives a little more background on Time.</p>
             </div>
         </div>
     </div>
     <!------------------------------------------- Instructions with button --------------------------------------->
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-11">
-                <button class="button-instructions">Read Me!</button>
+            <div class="col-sm-12 col-md-11 col-lg-11">
+                <button class="button-instructions">Click Me!</button>
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div id="instructions-fade">
                         <p>
                             <b>Instructions:</b>
-                            <p>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
+                            <p>Good job! Let's take a look at the stats! The best way to do this is to go to the first chart, By Honor. 
+                            Click on a color in the pie chart and watch as the rest of the charts filter. To see more information 
+                            about each chart, just click on the title (By Honor, By Country, etc.) and watch the magic happen!</p>
+                            <p>Say you didn't want to start with the Honor chart, you can absolutely click on another chart to begin - 
+                            but remember you'll need to press the Reset button (the red button top right of this message or the black one at the bottom of the page) to set them up again. If you're on a mobile, you press on a chart and swipe across to 
+                            see the full graph. Have fun!</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-1">
+            <div class="col-sm-1 col-md-1 col-lg-1">
                 <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset</a>
             </div>
         </div>
@@ -82,7 +86,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6">
                 <div id="flip">By Honor</div>
-                <div id="panel">Take a look at the pie chart below and press your finger on a colour! Once you hit the colour, watch the rest of the charts filter! Remember to scroll across on your phone!</div>
+                <div id="panel"> Once you select a color - by clicking on a colored square or touching a color in the pie chart - you can see what percentage of men, women and more have won. Remember to swipe across on your phone to see the full chart! </div>
                 <div class="honor">
                     <div id="honor-chart"></div>
                 </div>
@@ -90,7 +94,7 @@
             <!------------------------------------------- Country Pie ---------------------------------------------->
             <div class="col-sm-6 col-md-12 col-lg-6">
                 <div id="flip-1">By Country</div>
-                <div id="panel-1">Once you reset the button up top, you can then pick a country and see all the charts change by country!</div>
+                <div id="panel-1"> On this chart you can see the amount of people (and things!) honored broken down into countries. Hover over the slices to find out how many times a country has won!</div>
                 <div class="country">
                     <div id="country-chart"></div>
                 </div>
@@ -102,7 +106,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-10">
                 <div id="flip-2">By Category</div>
-                <div id="panel-2">With this chart you can see who won and in what category! Click on a bar chart to see the rest of the charts filter.</div>
+                <div id="panel-2">You should see by now that when you click on a chart, the other charts will change too - this is so you can see more information. This bar chart displays the category, i.e the area of work the winners come from. Were they political or did they get honored for their work in the media? Check it out!</div>
                 <div class="bar-category">
                     <div id="bar-chart"></div>
                 </div>
@@ -121,7 +125,7 @@
         <div class="row">
             <div class="col-sm-1 col-md-12 col-lg-12">
                 <div id="flip-4">Table Data</div>
-                <div id="panel-4">With this table you can see all the winners and the table will give you more information about every other category. Use the Prev and Next buttons to move between data.</div>
+                <div id="panel-4"> This table gives you everything! If another chart is active right now then you'll only see the filtered results. Like all other charts, press the Reset button to see all data. Use the Prev and Next buttons to move between data.</div>
                 <div class="table-data">
                     <table id="dc-data-table" class="table">
                 </div>
@@ -141,8 +145,8 @@
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div id="paging">
                             Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
-                            <input id="prev" class="btn-primary active" type="button" value="Prev" />
                             <input id="next" class="btn-primary active" type="button" value="Next" />
+                            <input id="prev" class="btn-primary active" type="button" value="Prev" />
                         </div>
                     </div>
                 </div>
@@ -154,7 +158,7 @@
     <!----------------------------------------------------------- Footer------------------------------------------------->
     <footer>
         <div class="col-sm-2 col-md-3 col-lg-2">
-            <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-dark active">Reset All</a>
+            <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-dark active">Reset</a>
         </div>
     </footer>
 

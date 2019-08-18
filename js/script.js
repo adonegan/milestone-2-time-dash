@@ -2,7 +2,9 @@ queue()
     .defer(d3.csv, "data/archive2.csv")
     .await(makeGraphs);
 
-/* Print Filter */
+
+/* ------------------------------------------------------------------------- Print Filter */
+
 
 function print_filter(filter) {
     var f = eval(filter);
@@ -15,7 +17,9 @@ function print_filter(filter) {
     console.log(filter + "(" + f.length + ") = " + JSON.stringify(f).replace("[", "[\n\t").replace(/}\,/g, "},\n\t").replace("]", "\n]"));
 }
 
-/* Render All */
+
+/* ------------------------------------------------------------------------- Render All */
+
 
 function makeGraphs(error, archiveData) {
     var ndx = crossfilter(archiveData);
@@ -30,7 +34,8 @@ function makeGraphs(error, archiveData) {
 }
 
 
-/* Honor function */
+/* ------------------------------------------------------------------------- Honor function */
+
 
 function show_honor_pie(ndx) {
     var dim = ndx.dimension(dc.pluck('Honor'));
@@ -57,7 +62,8 @@ function show_honor_pie(ndx) {
 
 }
 
-/* Country function */
+/* ------------------------------------------------------------------------- Country function */
+
 
 function show_country_pie(ndx) {
     var dim = ndx.dimension(dc.pluck('Country'));
@@ -81,7 +87,9 @@ function show_country_pie(ndx) {
     // print_filter(group);
 }
 
-/* Category function */
+
+/* ------------------------------------------------------------------------- Category function */
+
 
 function show_category_bar(ndx) {
     var dim = ndx.dimension(dc.pluck('Category'));
@@ -106,6 +114,9 @@ function show_category_bar(ndx) {
 }
 
 
+/* -------------------------------------------------------------------------- Year function */
+
+
 function show_year_selector(ndx) {
     let dim = ndx.dimension(dc.pluck('Year'));
     let group = dim.group();
@@ -118,10 +129,12 @@ function show_year_selector(ndx) {
 }
 
 
+/* -------------------------------------------------------------------------- Table function */
+
+
 function show_full_table(ndx) {
 
  var dim = ndx.dimension(function(d) { return d.dim; });
- 
  var table = dc.dataTable("#dc-data-table")
  
         .dimension(dim)
@@ -193,7 +206,9 @@ function display() {
 
 }
 
- // W3Schools code 
+
+/* ------------------------------------------------------------------------- W3School fadeToggle for Click Me! button */
+
 
 $(document).ready(function(){
  $("button").click(function(){
@@ -201,7 +216,8 @@ $(document).ready(function(){
   });
 });
 
- // W3Schools code 
+
+/* -------------------------------------------------------------------------- W3School slideToggle for chart "by" titles */
 
 $(document).ready(function(){
   $("#flip").click(function(){
@@ -210,15 +226,12 @@ $(document).ready(function(){
 });
 
 
- // W3Schools code 
-
 $(document).ready(function(){
   $("#flip-1").click(function(){
     $("#panel-1").slideToggle("slow");
   });
 });
 
- // W3Schools code 
 
 $(document).ready(function(){
   $("#flip-2").click(function(){
@@ -227,13 +240,11 @@ $(document).ready(function(){
 });
 
 
-
 $(document).ready(function(){
   $("#flip-3").click(function(){
     $("#panel-3").slideToggle("slow");
   });
 });
-
 
 
 $(document).ready(function(){
