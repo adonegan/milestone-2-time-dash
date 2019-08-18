@@ -103,7 +103,7 @@ button {
     text-align: justify;
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
 }
 
@@ -117,7 +117,14 @@ button {
     padding: 6px 16px;
     font-family: 'Lato', sans-serif;
     float: right;
-  /*  margin-right: 35%; */
+}
+
+.btn-dark {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 6px 16px;
+    font-family: 'Lato', sans-serif;
+    float: left;
 }
 
 
@@ -336,11 +343,11 @@ tr {
 
 
 #paging {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #next {
-    padding: 3px 15px;
+    padding: 3px 10px;
     font-size: 15px;
     border-radius: 4px;
     margin-top: 5px;
@@ -348,7 +355,7 @@ tr {
 }
 
 #prev {
-    padding: 3px 15px;
+    padding: 3px 10px;
     font-size: 15px;
     border-radius: 4px;
     margin-top: 5px;
