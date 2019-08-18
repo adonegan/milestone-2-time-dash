@@ -16,14 +16,12 @@ body {
 
 .container {
     width: 100%;
-    /* padding-right: 10px; */
-    /* padding-left: 10px; */
-      margin-right: auto; 
-      margin-left: auto; 
+    margin-right: auto; 
+    margin-left: auto; 
 }
 
 
-/* ------------------------------------------ Navbar*/
+/* ------------------------------------------------------------------------- Navbar*/
 
 
 nav .navbar-brand {
@@ -44,52 +42,32 @@ nav .navbar-brand {
 }
 
 
-/* ------------------------------------ Reset button */
 
-.btn-primary {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 6px 16px;
-    font-family: 'Lato', sans-serif;
-}
-
-/* ------------------------------------------ Read Me! button W3Schools code */
+/* ------------------------------------------------------------------------- Read Me! button W3Schools code */
 
 button {
   background-color: #D62503;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
-  display: inline-block;
   margin: 2px 2px;
   -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   cursor: pointer;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
-  float: right;
 } 
 
 .button-instructions {
-  background-color: #D62503; 
+  background-color: #000; 
   color: white; 
-  border: 2px solid #D62503;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  font-size: 19px;
-  font-weight: 500;
-} 
-
-.button-instructions:hover {
-  background-color: #000;
-  color: white;
   border: 2px solid #000;
   border-radius: 6px;
   margin-bottom: 20px;
   margin-top: 10px;
   font-size: 19px;
   font-weight: 500;
+  padding: 8px 100px;
 } 
 
 #instructions-fade {
@@ -97,7 +75,7 @@ button {
     color: black;
     background-color: #FFDAB9;
     margin-bottom: 30px;
-    padding: 10px 30px;
+    padding: 20px 30px;
     text-align: justify;
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
@@ -105,15 +83,15 @@ button {
     font-size: 22px;
 }
 
-h2 {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+/* ------------------------------------------------------------------------- Reset button from Tim Nelson (https://codepen.io/traveltimn/pen/MxxBMx) */
 
-p {
-    padding-top: 5px;
-    
+.btn-primary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 16px;
+    font-family: 'Lato', sans-serif;
+    float: right;
+  /*  margin-right: 35%; */
 }
 
 
@@ -123,13 +101,13 @@ p {
 }
 
 
-.pie-title {
+/* .pie-title {
     text-align: center;
     padding-bottom: 20px;
     font-size: 30px;
     border: 0.5px solid gray;
     padding-top: 10px;
-}
+}*/
 
 .intro-text {
     padding-top: 40px;
@@ -375,6 +353,77 @@ footer {
     font-weight: 900;
 }
 
+
+
+/* .img-fluid {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 480px;
+    width: 380px;
+}
+
+.img-poy {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 550px;
+    width: 800px;
+} */
+
+.title {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+/* ------------------------------------------ Data Table */
+
+
+.table-data {
+    width: 100%;
+    overflow: scroll;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#dc-data-table {
+    font-family: sans-serif;
+}
+
+
+#paging {
+    font-size: 15px;
+}
+
+#prev {
+    padding: 3px 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#next {
+    padding: 3px 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+
+tr {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* ------------------------------------------------------------------------ Unique content to Info Page */
+
+
+
 #box {
     height: 700px;
     width: 346px;
@@ -388,29 +437,6 @@ footer {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
 }
-
-
-.img-fluid {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 480px;
-    width: 380px;
-}
-
-.img-poy {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 550px;
-    width: 800px;
-}
-
-.title {
-    text-align: center;
-    font-weight: 500;
-}
-
-
-/* ------------------------------------------ Font Awesome icons*/
 
 .fa-trophy {
     font-size: 50px;
@@ -434,46 +460,6 @@ footer {
     padding-right: 25%;
     padding-top: 20px;
     padding-bottom: 25px;
-}
-
-/* ------------------------------------------ Data Table */
-
-
-.table-data {
-    width: 100%;
-    overflow: scroll;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-}
-
-#dc-data-table {
-    font-family: sans-serif;
-}
-
-
-#paging {
-    font-size: 15px;
-}
-
-#prev {
-    padding: 5px 30px;
-    font-size: 15px;
-    border-radius: 4px;
-    margin-left: 10px;
-}
-
-#next {
-    padding: 5px 30px;
-    font-size: 15px;
-    border-radius: 4px;
-}
-
-
-tr {
-    color: black;
-    text-align: center;
-    font-size: 12px;
 }
 
 .video-title {

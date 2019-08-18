@@ -25,15 +25,12 @@
 </head>
 
 <body>
-
-    <!--------------------------------- Navbar ------------------------------------------------------>
-
+    <!------------------------------------------------ Navbar ------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <span class="navbar-brand">Time</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -45,25 +42,14 @@
             </ul>
         </div>
     </nav>
-
-
-
-    <!-------------------------------------- Title & Reset button ---------------------------------->
-
+    <!-------------------------------------------- Title & Reset button --------------------------------------->
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div id="nav-name">Person of the Year, 1927 - Present</div>
             </div>
-
-
-
-            <!-- <div class="col-sm-2 col-md-3 col-lg-4">
-                <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset All</a>
-            </div> -->
         </div>
     </div>
-
     <!------------------------------------------- Introductory home text --------------------------------------->
     <div class="container">
         <div class="row">
@@ -73,92 +59,69 @@
             </div>
         </div>
     </div>
-
     <!------------------------------------------- Instructions with button --------------------------------------->
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-11">
                 <button class="button-instructions">Read Me!</button>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset All</a>
-            </div>
-
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div id="instructions-fade">
-                    <p><b>Instructions:</b><br>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the
-                        Reset All button.
-                    </p>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="instructions-fade">
+                        <p>
+                            <b>Instructions:</b>
+                            <p>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
+                    </div>
                 </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-1">
+                <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset</a>
             </div>
         </div>
     </div>
-    <!------------------------------------------- Honor Pie --------------------------------------->
-
-
+    <!-------------------------------------------------- Honor Pie ------------------------------------------------>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6">
-
                 <div id="flip">By Honor</div>
                 <div id="panel">Take a look at the pie chart below and press your finger on a colour! Once you hit the colour, watch the rest of the charts filter! Remember to scroll across on your phone!</div>
-                <!---  <h4 class="pie-title">By Honor</h4> --->
                 <div class="honor">
                     <div id="honor-chart"></div>
                 </div>
             </div>
-            <!------------------------------------------- Country Pie --------------------------------------->
+            <!------------------------------------------- Country Pie ---------------------------------------------->
             <div class="col-sm-6 col-md-12 col-lg-6">
-
                 <div id="flip-1">By Country</div>
                 <div id="panel-1">Once you reset the button up top, you can then pick a country and see all the charts change by country!</div>
-                <!--- <h4 class="pie-title">By Country</h4> --->
                 <div class="country">
                     <div id="country-chart"></div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
-
-
     <!------------------------------------------- Category Bar & Menu Selector --------------------------------------->
-
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-10">
-
                 <div id="flip-2">By Category</div>
                 <div id="panel-2">With this chart you can see who won and in what category! Click on a bar chart to see the rest of the charts filter.</div>
-                <!--    <h4 class="pie-title">By Category</h4> -->
                 <div class="bar-category">
                     <div id="bar-chart"></div>
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-2">
-
                 <div id="flip-3">By Year</div>
                 <div id="panel-3">Pick a year below!</div>
-                <!-- <h4 class="pie-title">By Year</h4> -->
                 <div class="year">
                     <div id="year-selector"></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!------------------------------------------- Table Data --------------------------------------->
-
+    <!------------------------------------------------------ Table Data ----------------------------------------------->
     <div class="container">
         <div class="row">
             <div class="col-sm-1 col-md-12 col-lg-12">
-
                 <div id="flip-4">Table Data</div>
                 <div id="panel-4">With this table you can see all the winners and the table will give you more information about every other category. Use the Prev and Next buttons to move between data.</div>
-
-                <!--  <h4 class="pie-title">Table data</h4> -->
                 <div class="table-data">
                     <table id="dc-data-table" class="table">
                 </div>
@@ -174,9 +137,9 @@
                     </tr>
                 </thead>
                 </table>
-                <div id="paging">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div id="paging">
                             Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
                             <input id="prev" class="btn-primary active" type="button" value="Prev" />
                             <input id="next" class="btn-primary active" type="button" value="Next" />
@@ -188,24 +151,17 @@
     </div>
     <p></p>
     </div>
-    <!------------------------------------------- Footer--------------------------------------->
-    </div>
-
+    <!----------------------------------------------------------- Footer------------------------------------------------->
     <footer>
         <div class="col-sm-2 col-md-3 col-lg-2">
             <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-dark active">Reset All</a>
         </div>
-
     </footer>
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 
 </body>
 
