@@ -52,41 +52,48 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-9 col-lg-10">
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <div id="nav-name">Person of the Year, 1927 - Present</div>
             </div>
 
-            <div class="col-sm-2 col-md-3 col-lg-2">
+
+
+            <!-- <div class="col-sm-2 col-md-3 col-lg-4">
                 <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset All</a>
+            </div> -->
+        </div>
+    </div>
+
+    <!------------------------------------------- Introductory home text --------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="intro-text-dash">Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time that features and profiles a person, a group, an idea, or an object that "for better or for worse...
+                    has done the most to influence the events of the year". (- Wikipedia)</p>
             </div>
         </div>
     </div>
 
+    <!------------------------------------------- Instructions with button --------------------------------------->
     <div class="container">
         <div class="row">
-
-            <!------------------------------------------- Introductory home text --------------------------------------->
-            <div class="col-sm-12 col-md-12 col-lg-9">
-                <p class="intro-text-dash">Person of the Year (called Man of the Year or Woman of the Year until 1999) is an annual issue of the United States news magazine Time that features and profiles a person, a group, an idea, or an object that "for better or for worse...
-                    has done the most to influence the events of the year". (- Wikipedia)</p>
-            </div>
-
-            <!------------------------------------------- Instructions with button --------------------------------------->
-
-
-            <div class="col-sm-12 col-md-12 col-lg-2">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <button class="button-instructions">Read Me!</button>
             </div>
-            
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <a href="javascript:dc.filterAll(); dc.renderAll();" class="btn btn-primary active">Reset All</a>
+            </div>
+
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div id="instructions-fade">
-                    <p><b>Instructions:</b><br>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the Reset All button.
-                        <p></p>
+                    <p><b>Instructions:</b><br>To use these charts, please take a look at the first chart, select a colour on the pie chart and watch as the rest of the charts filter to show the results. If you want to see more results, please press the
+                        Reset All button.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
     <!------------------------------------------- Honor Pie --------------------------------------->
 
 
@@ -168,9 +175,13 @@
                 </thead>
                 </table>
                 <div id="paging">
-                    Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
-                    <input id="prev" class="btn-primary active" type="button" value="Prev" />
-                    <input id="next" class="btn-primary active" type="button" value="Next" />
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
+                            <input id="prev" class="btn-primary active" type="button" value="Prev" />
+                            <input id="next" class="btn-primary active" type="button" value="Next" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
