@@ -12,20 +12,11 @@ This website is for people who enjoy reading Time magazine and like the annual P
 They want to know who the previous winners of the honor are, what year they won, from what categories and
 country the winners are from.
 
-##### User story 1
-* As a reader of Time magazine, my favourite issue is when they choose Person of the Year. 
-
-##### User story 2
-* As a student journalist writing about Time's People of the Year, I want to know more of its history as a feature.
-
-##### User story 3
-* As someone who doesn't know what Time magazine is or what Person of the Year is, I'm still interested in the stats.
-
-##### User story 4
-* As a sometimes reader of Time magazine, I like hearing who has made it to the top of the Person of the Year choice.
-
-##### User story 5
-* As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
+* User story 1 = As a reader of Time magazine, my favourite issue is when they choose Person of the Year. 
+* User story 2 = As a student journalist writing about Time's People of the Year, I want to know more of its history as a feature.
+* User story 3 = As someone who doesn't know what Time magazine is or what Person of the Year is, I'm still interested in the stats.
+* User story 4 = As a sometimes reader of Time magazine, I like hearing who has made it to the top of the Person of the Year choice.
+* User story 5 = As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
 
 ### Wireframes
 
@@ -91,11 +82,11 @@ footer section. More buttons may be added later if the need is there.
 
 ## Technologies Used
 
-##### HTML 
+##### HTML5
 * This code was used to layout the structure of each page and the placement of each chart on both the Stats page and the Info page. It
 also contributed to the nav, main and footer sections of the page.
 
-##### CSS 
+##### CSS3
 * This code was used to add style to the HTML specifications. CSS changes were made throughout the project in order to enhance the look 
 and feel of the site. While the background color is mostly white, I played around with different colors on the charts and toggle areas.
 
@@ -131,9 +122,82 @@ select one based on my own interests in world affairs. Once I found my dataset, 
 * As you can see from my project I added both json and csv data files to my documentation - this was purely for testing reasons 
 as I had difficulty access the data when I started the project. This project takes data from the .csv file only.
 
+##### AWSCloud9
+* I used AWS Educate, Cloud 9 to write up my code. With this programme was I work on my dashboard in an environment and I access to a Terminal
+where I could push versions to GitHub.
+
+##### GitHub
+* I've saved my project on this service as I can easily push all content over to it over a long period of time. I can see the changes I've 
+made and track issues as they come up. It's great for seeing each version or saved addition I've made.
+
+##### Balsamiq
+* At the start of this project I used this service to brainstorm and display my ideas for the look of the site. See above in Wireframes.
+
+##### Google Fonts
+* To add variety and style to my project, I used two fonts: Merriweather (for major titles) and Lato (other text). These fonts have been 
+added to my style.css page and imported both fonts, adding font weights.
+
+##### Bootstrap 4
+* I used this technology for its framework and the grid system, which helped make my site as responsive as possible.
+
 ## Testing
 
-Charts: 
+#### General
+
+I tested the functinality of this project manually. This was done by first reading code, adding it and then checking it worked. This proved 
+to be very helpful, especially when keep note of what worked and what didn't. For the charts, it was easier to see when they weren't working
+as DC charts would not display at all if there was an error in code.
+
+Responsive design was very important for this project as I'd heard it was very difficult to make charts responsive, which would not make a 
+good user experience when using the site on a mobile. To make it as responsive as possible I used Bootstrap's grid system and -sm, -md and
+-lg to set the responsive nature of the site. I manually tested this by checking the look of the site using Chrome Developer Tools.
+
+Browsers I used to check the site include Chrome Version 76.0.3809.100, Safari Version 12.0 and Firefox Quantum 68.0.2. Checking my site on
+different browsers helped me see how it would render for users whose default browser is not Chrome, like mine. Mobiles that were used to test
+how the site looks were iPhone 5/SE, iPhone 6/7/8 (and plus versions), iPhone X, Samsung Galaxy A70, Samsung Galaxy S5, Pixel 2 (and XL). iPad
+and iPad Pro were used to see a medium screens. On laptop, it was viewed with a MacBook Air.
+
+#### Navigation
+
+I added a Bootstrap navigation but on feedback from Slack peers, the dropdown feature didn't work. When I added jQuery, it worked then. To
+test it I asked family members and peers to view my website on mobile and on tablet to see if the navbar worked. I then used the devices listed
+above to see the navbar in action.
+
+#### Charts
+
+Print_filter.js was used a lot initially to see what data was used and what dimensions I had a hold of. It was a great way to see the data I 
+had called. To test these charts further, then I asked friends and family members to visit the site and see if the charts filtered accordingly.
+It was noticed that the Prev and Next buttons weren't acting properly, so after checking it out myself, I crosschecked my code with the code 
+listed in the DC.js documentation and realised an ID tag was not assigned properly.
+
+#### Try it out
+
+1. Navbar: Visit https://adonegan.github.io/milestone2-dashboard/stats.html and click on Stats and Info to see both pages. On your phone, uses the hamburger menu icon to move between pages.
+2. Click Me! button: Go to the website and click on the button. You will see each
+
+
+
+
+#### Issues
+
+
+| Number | Issue            | Resolution   |
+|--------|------------------|--------------|
+|  1  | Seeing data   | Added print_filter.js function to act like console.log, so I could see inside variables while on the DOM |
+|  2  | Code errors | Consulted with Student Care and also used Diffchecker to spot coding irregularities |
+|  3  | Responsive design  |  Added scrolling feature to all charts to make the site as responsive as possible on mobile  |
+|  4  | Button placement  |  Placed buttons on top and bottom of page to prevent clutter |
+|  5  | Instructions  |  Feedback from users suggested more instructions were needed so I added more text to show users how to use site |
+|  6  | Too much writing  | Added jQuery slide and fade toggles to show and hide instructional text |
+|  7  | Too many pages  | Initially had three htmls but deleted them in favour of an info.html page with a little added content on Time  |
+|  8  | Logo placement  | Big Time logo seemed out of place in body of text so I added it to the navigation bar |
+|  9  | Color instructions | Text and instructions were hard to read. Changed to a black background color on jQuery toggles |
+|  10 | Table text | Too much text in fields so I made the text smaller to accommodate and make it easier to read on a design level |
+|  11 | Prev & Next buttons | Compared peer code with office DC code and added to my site |
+|           |               |              |
+
+
+
 
 ## Deployment
 
@@ -146,8 +210,8 @@ Charts:
 ### Acknowledgements
 
 * Print_filter from https://gist.github.com/xhinking/9341806
-* Crossfilter for Data Science Essential Training - Emma Saunders, LinkedIn Learning
-* DC.js for Data Science Essential Training - Emma Saunders, LinkedIn Learning
-* https://dc-js.github.io/dc.js/examples/
-* https://robsimons1.github.io/global-white-shark-attack-dashboard/
-* https://codepen.io/traveltimn/pen/MxxBMx - Tim Nelson
+* Additional support: Crossfilter for Data Science Essential Training - Emma Saunders, LinkedIn Learning
+* Additional support: DC.js for Data Science Essential Training - Emma Saunders, LinkedIn Learning
+* Chart documentation: https://dc-js.github.io/dc.js/examples/
+* Inspiration from: https://robsimons1.github.io/global-white-shark-attack-dashboard/ - Rob Simons
+* Inspiration from: https://codepen.io/traveltimn/pen/MxxBMx - Tim Nelson
