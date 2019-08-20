@@ -16,8 +16,8 @@ body {
 
 .container {
     width: 100%;
-    margin-right: auto; 
-    margin-left: auto; 
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -26,14 +26,14 @@ body {
 
 .navbar {
     background-color: #D62503;
-} 
+}
 
 nav .navbar-brand {
     font-size: 30px;
     text-align: center;
     font-family: 'Merriweather';
     font-weight: 500;
-   /* margin: auto; */
+    /* margin: auto; */
 }
 
 .nav-item {
@@ -65,34 +65,34 @@ nav .navbar-brand {
 }
 
 
-/* ------------------------------------------------------------------------- Read Me! button W3Schools code */
+/* ------------------------------------------------------------------------- Click Me! button W3Schools code */
 
 
 button {
-  background-color: #D62503;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  margin: 2px 2px;
-  -webkit-transition-duration: 0.4s; 
-  transition-duration: 0.4s;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-} 
+    background-color: #D62503;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
 
 .button-instructions {
-  background-color: #303131; 
-  color: white; 
-  border: 2px solid #303131;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  font-size: 19px;
-  font-weight: 500;
-  padding: 8px 100px;
-} 
+    background-color: #303131;
+    color: white;
+    border: 2px solid #303131;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 8px 100px;
+}
 
 #instructions-fade {
     display: none;
@@ -103,13 +103,12 @@ button {
     text-align: justify;
     border-radius: 8px;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 22px;
 }
 
 
 /* ------------------------------------------------------------------------- Reset button from Tim Nelson (https://codepen.io/traveltimn/pen/MxxBMx) */
-
 
 .btn-primary {
     margin-top: 10px;
@@ -129,7 +128,6 @@ button {
 
 
 /* ------------------------------------------------------------------------- Responsive scrolling for charts*/
-
 
 .honor {
     width: 100%;
@@ -152,7 +150,6 @@ button {
 
 /* ------------------------------------------------------------------------ Chart styling to align on top*/
 
-
 #honor-chart {
     padding-bottom: 50px;
     margin-top: 10px;
@@ -170,29 +167,29 @@ button {
 
 /* ------------------------------------------------------------------------ jQuery Slide for dropdown comments, W3Schools */
 
-
 /* ----------------------------------- Honor */
 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #fff;
-  border: solid 2px #313030;
-  border-radius: 6px;
-  cursor: pointer;
-  color: black;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+#panel,
+#flip {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #313030;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #313030;
 }
 
 #panel {
-  padding: 40px;
-  display: none;
-  background-color: #313030;
-  color: white;
-  border-radius: 6px;
-  text-align: justify;
+    padding: 40px;
+    display: none;
+    background-color: #313030;
+    color: white;
+    border-radius: 6px;
+    text-align: justify;
 }
 
 #flip {
@@ -203,25 +200,27 @@ button {
 
 /* ---------------------------------- Country */
 
-#panel-1, #flip-1 {
-  padding: 5px;
-  text-align: center;
-  background-color: #fff;
-  border: solid 2px #313030;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+#panel-1,
+#flip-1 {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #313030;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #313030;
 }
 
 #panel-1 {
-  padding: 40px;
-  display: none;
-  background-color: #313030;
-  color: white;
-  border-radius: 6px;
-  text-align: justify;
+    padding: 40px;
+    display: none;
+    background-color: #313030;
+    color: white;
+    border-radius: 6px;
+    text-align: justify;
 }
 
 #flip-1 {
@@ -232,25 +231,27 @@ button {
 
 /* ----------------------------------- Category */
 
-#panel-2, #flip-2 {
-  padding: 5px;
-  text-align: center;
-  background-color: #fff;
-  border: solid 2px #313030;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+#panel-2,
+#flip-2 {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #313030;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #313030;
 }
 
 #panel-2 {
-  padding: 40px;
-  display: none;
-  background-color: #313030;
-  color: white;
-  border-radius: 6px;
-  text-align: justify;
+    padding: 40px;
+    display: none;
+    background-color: #313030;
+    color: white;
+    border-radius: 6px;
+    text-align: justify;
 }
 
 #flip-2 {
@@ -261,24 +262,26 @@ button {
 
 /* ----------------------------------- Year */
 
-#panel-3, #flip-3 {
-  padding: 5px;
-  text-align: center;
-  background-color: #fff;
-  border: solid 2px #313030;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+#panel-3,
+#flip-3 {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #313030;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #313030;
 }
 
 #panel-3 {
-  padding: 40px;
-  display: none;
-  background-color: #313030;
-  color: white;
-  border-radius: 6px;
+    padding: 40px;
+    display: none;
+    background-color: #313030;
+    color: white;
+    border-radius: 6px;
 }
 
 #flip-3 {
@@ -289,25 +292,27 @@ button {
 
 /* ---------------------------------- Table */
 
-#panel-4, #flip-4 {
-  padding: 5px;
-  text-align: center;
-  background-color: #fff;
-  border: solid 2px #313030;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+#panel-4,
+#flip-4 {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #313030;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #313030;
 }
 
 #panel-4 {
-  padding: 40px;
-  display: none;
-  background-color: #313030;
-  color: white;
-  border-radius: 6px;
-  text-align: justify;
+    padding: 40px;
+    display: none;
+    background-color: #313030;
+    color: white;
+    border-radius: 6px;
+    text-align: justify;
 }
 
 #flip-4 {
@@ -318,7 +323,6 @@ button {
 
 
 /* ------------------------------------------------------------------------- Data Table */
-
 
 .table-data {
     width: 100%;
@@ -340,7 +344,6 @@ tr {
 
 
 /* ------------------------------------------------------------------------- Pagination and prev / next buttons */
-
 
 #paging {
     font-size: 13px;
@@ -364,7 +367,6 @@ tr {
 
 /* ------------------------------------------------------------------------- Footer section */
 
-
 footer {
     height: 100px;
     width: 100%;
@@ -374,7 +376,6 @@ footer {
 
 /* ------------------------------------------------------------------------ Unique content to Info Page */
 
-
 #box {
     height: 600px;
     width: 346px;
@@ -382,7 +383,7 @@ footer {
     background-color: #313030;
     color: white;
     padding: 20px;
-    text-align: justify; 
+    text-align: justify;
     margin-top: 30px;
     border-radius: 12px;
     font-family: 'Lato', sans-serif;
@@ -394,22 +395,22 @@ footer {
 .title {
     text-align: center;
     font-weight: 500;
-} 
+}
 
 .fa-trophy {
     font-size: 50px;
     padding-left: 42%;
     padding-right: 25%;
     padding-top: 20px;
-    padding-bottom: 25px; 
-} 
+    padding-bottom: 25px;
+}
 
 .fa-award {
     font-size: 50px;
     padding-left: 42%;
     padding-right: 25%;
     padding-top: 20px;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
 }
 
 .fa-newspaper {
@@ -417,7 +418,7 @@ footer {
     padding-left: 42%;
     padding-right: 25%;
     padding-top: 20px;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
 }
 
 .video-title {
