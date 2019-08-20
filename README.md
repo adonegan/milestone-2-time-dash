@@ -208,8 +208,6 @@ listed in the DC.js documentation and realised an ID tag was not assigned proper
 |  9  | Color instructions | Text and instructions were hard to read. Changed to a black background color on jQuery toggles |
 |  10 | Table text | Too much text in fields so I made the text smaller to accommodate and make it easier to read on a design level |
 |  11 | Prev & Next buttons | Compared peer code with office DC code and added to my site |
-|           |               |              |
-
 
 ## Deployment
 
@@ -229,13 +227,14 @@ changes and versions to GitHub Pages, so the natural host was GitHub.
 
 ### Content
 
-Time data from Kaggle: https://www.kaggle.com/timemagazine/magazine-covers
-Text content edited and added to from content on Wikipedia: https://en.wikipedia.org/wiki/Time_Person_of_the_Year
+* Time data from Kaggle: https://www.kaggle.com/timemagazine/magazine-covers
+* Text content edited and added to from content on Wikipedia: https://en.wikipedia.org/wiki/Time_Person_of_the_Year
 
 ### Media
 
-Favicon take from Google Images.
-Responsiveness and device images image from http://ami.responsivedesign.is/ 
+* Favicon take from Google Images.
+* Responsiveness and device images image from http://ami.responsivedesign.is/ 
+* The Time video is hosted on YouTube: https://www.youtube.com/watch?v=t6GtguXWx34
 
 ### Acknowledgements
 
