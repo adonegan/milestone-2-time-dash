@@ -94,6 +94,7 @@ button {
     font-weight: 700;
     padding: 4px 40px;
     float: right;
+    margin-right: 20px;
 }
 
 #instructions-fade {
@@ -178,7 +179,7 @@ button {
 #flip {
     padding: 5px;
     text-align: center;
-    border: solid 1px #313030;
+    border: solid 1px #313030; /* changed div color after peer feedback */ 
     border-radius: 6px;
     cursor: pointer;
     color: white;
@@ -383,11 +384,11 @@ footer {
 /* ------------------------------------------------------------------------ Unique content to Info Page */
 
 #box {
-    height: 600px;
+    height: 720px;
     border: 1px solid #313030;
     background-color: #313030;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: justify;
     margin-top: 30px;
     border-radius: 12px;

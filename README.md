@@ -1,8 +1,8 @@
 # Time Magazine's Person of the Year, 1927 - Present
 
-This data dashboard displays stats from Time's Magazine's Person of the Year honor from 1927 to 2018, the present.
-It shows mutliple charts with data from different dimensions and there's also text you can read to navigate the site.
-You will find bar charts, line charts, pie charts and tables to show this data. You'll also see toggle sections to show and hide information.
+This data dashboard displays stats from Time's Magazine's Person of the Year honor from 1927 to 2018 - the latest year.
+It shows mutliple charts with data from different dimensions and there's also text users can read to navigate the site.
+Users will find bar charts, pie charts and a table to show this data. Users will also see toggle sections to show and hide information.
 
 ## UX
 
@@ -10,18 +10,18 @@ You will find bar charts, line charts, pie charts and tables to show this data. 
 
 This website is for people who enjoy reading Time magazine and like the annual Person of the Year feature.
 They want to know who the previous winners of the honor are, what year they won, from what categories and
-country the winners are from.
+country the winners are from, too.
 
 1. <b>User story 1</b>: As a reader of Time magazine, my favourite issue is when they choose Person of the Year. 
 2. <b>User story 2</b>: As a student journalist writing about Time's People of the Year, I want to know more of its history as a feature.
 3. <b>User story 3</b>: As someone who doesn't know what Time magazine is or what Person of the Year is, I'm still interested in the stats.
 4. <b>User story 4</b>: As a sometimes reader of Time magazine, I like hearing who has made it to the top of the Person of the Year choice.
-5. <b>User story 5</b>: As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
+5. <b>User story 5</b>: As a reader of Time magazine, I always want to know who the Person of the Year is, and the previous winners.
 
 ### Wireframes
 
 Initally a scatterplot was going to be used and more charts would be added to each row, but these features proved too unrealistic given space
-and dimensions that were set. A second page was decided on when I realised I wanted to have a navbar on the site.
+and dimensions that were set. A second page was decided on when I realised I wanted to have a navbar on the site. It also helped add my content.
 
 ![wireframe1.png](/images/wireframe1.png)
 ![wireframe2.png](/images/wireframe2.png)
@@ -31,17 +31,17 @@ and dimensions that were set. A second page was decided on when I realised I wan
 ### Existing features
 
 ##### Navbar
-* A Bootstrap code was used with jQuery added to make the navbar responsive. The color is the same red as the main color
+* Bootstrap code was used with jQuery added to make the navbar responsive. The color is the same red as the main color
 of Time Magazine. I also enlarged the text and made it white, to stand out. I also centered the text to add style.
 
 ##### Introductory text
 * The introductory text gives the site user a brief note on what the Person of the Year award is, what Time Magazine is and a little about
 the make-up of the award and how it's changed over the years.
 
-##### Read Me! button
+##### Click Me! button
 * This button, when clicked, gives the user instructions on how to navigate the Stats page. In feedback given to me by friends and family who
 are not familiar with dashboards, they advised me to create more text to explain what to do and the results of each bar chart. In this button
-I also tell users how to use the Header functionality listed below.
+I also tell users how to use the header functionality listed below.
 
 ##### Headers
 * The headers were initially used to signify what type of chart follows below, however, on advice mentioned above I used these divs to hide
@@ -61,7 +61,7 @@ charts.
 
 ##### Category bar chart
 * A different type of chart to display the data this time, the bars in this chart show the winners' sphere of influence, i.e. the category 
-in which the winners are connected to and have won because of this cateory. For example, users can see that the people who won in the name
+in which the winners are connected to and have won because of this category. For example, users can see that the people who won in the name
 of politics greatly exceed other categories. Like all other charts, users can click on the bar chart to filter the results in other charts.
 
 ##### Select menu
@@ -83,7 +83,7 @@ award year by year without having to continuously scroll down through data.
 ### Features Left to Implement
 
 In the process of this milestone project I considered adding more buttons to reset individual charts, but felt that this would clutter up
-page and affect usability significantly. In the end I've opted to highlight this in the Read Me! button and provide one other button in the
+page and affect usability significantly. In the end I've opted to highlight this in the Click Me! button and provide one other button in the
 footer section. More buttons may be added later if the need is there.
 
 In addition, I had considered changing the colors of the charts to complement the black, red and white colors associated with Time magazine.
@@ -92,7 +92,7 @@ In the end, I opted to leave the chart colors as they were, to keep the page mor
 ## Technologies Used
 
 ##### HTML5
-This code was used to layout the structure of each page and the placement of each chart on both the Stats page and the Info page. It
+This code was used to lay out the structure of each page and the placement of each chart on both the Stats page and the Info page. It
 also contributed to the nav, main and footer sections of the page.
 
 ##### CSS3
@@ -100,7 +100,7 @@ This code was used to add style to the HTML specifications. CSS changes were mad
 and feel of the site. While the background color is mostly white, I played around with different colors on the charts and toggle areas.
 
 ##### JavaScript 
-JS was used to queue my charts, as reset buttons and also contributed to specific functions used to create functionality on the page.
+JS was used to queue my charts, and reset buttons and also contributed to specific functions used to create functionality on the page.
 I also used a function called print_filter to access the DOM and see objects and the content of arrays on the page.
 
 ##### Bootswatch 
@@ -154,7 +154,7 @@ I used this technology for its framework and the grid system, which helped make 
 #### General
 
 I tested the functinality of this project manually. This was done by first reading code, adding it and then checking it worked. This proved 
-to be very helpful, especially when keep note of what worked and what didn't. For the charts, it was easier to see when they weren't working
+to be very helpful, especially when keeping note of what worked and what didn't. For the charts, it was easier to see when they weren't working
 as DC charts would not display at all if there was an error in code.
 
 Responsive design was very important for this project as I'd heard it was very difficult to make charts responsive, which would not make a 
@@ -232,7 +232,7 @@ changes and versions to GitHub Pages, so the natural host was GitHub.
 
 ### Media
 
-* Favicon take from Google Images.
+* Favicon taken from Google Images.
 * Responsiveness and device images image from http://ami.responsivedesign.is/ 
 * The Time video is hosted on YouTube: https://www.youtube.com/watch?v=t6GtguXWx34
 
