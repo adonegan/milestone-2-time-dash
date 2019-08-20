@@ -122,7 +122,7 @@ button {
 }
 
 .btn-dark {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
     padding: 6px 16px;
     font-family: 'Lato', sans-serif;
@@ -374,7 +374,7 @@ tr {
 /* ------------------------------------------------------------------------- Footer section */
 
 footer {
-    height: 100px;
+    height: 110px;
     width: 100%;
     background-color: #D62503;
 }
