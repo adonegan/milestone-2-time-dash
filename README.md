@@ -1,8 +1,8 @@
 # Time Magazine's Person of the Year, 1927 - Present
 
-This data dashboard displays data from Time's Magazine's Person of the Year since 1927. 
-The dashboard displays mutliple charts showing data from different dimensions.
-You will find bar charts, line charts, pie charts and tables to show this data.
+This data dashboard displays stats from Time's Magazine's Person of the Year honor from 1927 to 2018, the present.
+It shows mutliple charts with data from different dimensions and there's also text you can read to navigate the site.
+You will find bar charts, line charts, pie charts and tables to show this data. You'll also see toggle sections to show and hide information.
 
 ## UX
 
@@ -12,13 +12,16 @@ This website is for people who enjoy reading Time magazine and like the annual P
 They want to know who the previous winners of the honor are, what year they won, from what categories and
 country the winners are from.
 
-* User story 1 = As a reader of Time magazine, my favourite issue is when they choose Person of the Year. 
-* User story 2 = As a student journalist writing about Time's People of the Year, I want to know more of its history as a feature.
-* User story 3 = As someone who doesn't know what Time magazine is or what Person of the Year is, I'm still interested in the stats.
-* User story 4 = As a sometimes reader of Time magazine, I like hearing who has made it to the top of the Person of the Year choice.
-* User story 5 = As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
+1. <b>User story 1</b>: As a reader of Time magazine, my favourite issue is when they choose Person of the Year. 
+2. <b>User story 2</b>: As a student journalist writing about Time's People of the Year, I want to know more of its history as a feature.
+3. <b>User story 3</b>: As someone who doesn't know what Time magazine is or what Person of the Year is, I'm still interested in the stats.
+4. <b>User story 4</b>: As a sometimes reader of Time magazine, I like hearing who has made it to the top of the Person of the Year choice.
+5. <b>User story 5</b>: As a reader of Time magazine, always want to know who the Person of the Year is, and the previous winners.
 
 ### Wireframes
+
+![wireframe1.png](/images/wireframe1.png)
+![wireframe2.png](/images/wireframe2.png)
 
 ## Features
 
@@ -80,65 +83,68 @@ In the process of this milestone project I considered adding more buttons to res
 page and affect usability significantly. In the end I've opted to highlight this in the Read Me! button and provide one other button in the
 footer section. More buttons may be added later if the need is there.
 
+In addition, I had considered changing the colors of the charts to complement the black, red and white colors associated with Time magazine.
+In the end, I opted to leave the chart colors as they were, to keep the page more colorful. This can be re-evaluated and added as a featre later.
+
 ## Technologies Used
 
 ##### HTML5
-* This code was used to layout the structure of each page and the placement of each chart on both the Stats page and the Info page. It
+This code was used to layout the structure of each page and the placement of each chart on both the Stats page and the Info page. It
 also contributed to the nav, main and footer sections of the page.
 
 ##### CSS3
-* This code was used to add style to the HTML specifications. CSS changes were made throughout the project in order to enhance the look 
+This code was used to add style to the HTML specifications. CSS changes were made throughout the project in order to enhance the look 
 and feel of the site. While the background color is mostly white, I played around with different colors on the charts and toggle areas.
 
 ##### JavaScript 
-* JS was used to queue my charts, as reset buttons and also contributed to specific functions used to create functionality on the page.
+JS was used to queue my charts, as reset buttons and also contributed to specific functions used to create functionality on the page.
 I also used a function called print_filter to access the DOM and see objects and the content of arrays on the page.
 
 ##### Bootswatch 
-* The Journal template was used initially to start with as it provided a nice base for my project. However, I've added some of
+The Journal template was used initially to start with as it provided a nice base for my project. However, I've added some of
 my own CSS code from various places like Stack Overflow, CSS Tricks and Bootstrap.
 
 ##### Crossfiilter
-* For my interactive charts I used crossfilter technology. In the lead up to adding the charts I also watched a LinkedIn course
+For my interactive charts I used crossfilter technology. In the lead up to adding the charts I also watched a LinkedIn course
 outlining how to access information in arrays that would display and filter across multiple charts.
 
 ##### D3
-* This data-driven document technology was used to fuse chart data together to make the charts with the help of HTML ids. This technology 
+This data-driven document technology was used to fuse chart data together to make the charts with the help of HTML ids. This technology 
 helped to visualise the data contained with my Kaggle dataset on Time's Person of the Year from 1927 onwards.
 
 ##### DC
-* DC's library of code was used to make the charts. I took the code from the website and then charged dimensions, numbers and 
+DC's library of code was used to make the charts. I took the code from the website and then charged dimensions, numbers and 
 attributes to suit my needs for those charts.
 
 ##### jQuery
-* This technology was used to hide and show instructions and more information at command in a way to make the dashboard less cluttered.
+This technology was used to hide and show instructions and more information at command in a way to make the dashboard less cluttered.
 a min.js file was added to the JS folder and called above and below the code on each page. This technology also ensure nav functionality.
 
 ##### Kaggle
-* This website was a great resource for finding a suitable dataset. By visiting this site I was able to browse available datasets and 
+This website was a great resource for finding a suitable dataset. By visiting this site I was able to browse available datasets and 
 select one based on my own interests in world affairs. Once I found my dataset, I downloaded the file for use with my charting technologies.
 
 ##### CSV and JSON
-* As you can see from my project I added both json and csv data files to my documentation - this was purely for testing reasons 
+As you can see from my project I added both json and csv data files to my documentation - this was purely for testing reasons 
 as I had difficulty access the data when I started the project. This project takes data from the .csv file only.
 
 ##### AWSCloud9
-* I used AWS Educate, Cloud 9 to write up my code. With this programme was I work on my dashboard in an environment and I access to a Terminal
+I used AWS Educate, Cloud 9 to write up my code. With this programme was I work on my dashboard in an environment and I access to a Terminal
 where I could push versions to GitHub.
 
 ##### GitHub
-* I've saved my project on this service as I can easily push all content over to it over a long period of time. I can see the changes I've 
+I've saved my project on this service as I can easily push all content over to it over a long period of time. I can see the changes I've 
 made and track issues as they come up. It's great for seeing each version or saved addition I've made.
 
 ##### Balsamiq
-* At the start of this project I used this service to brainstorm and display my ideas for the look of the site. See above in Wireframes.
+At the start of this project I used this service to brainstorm and display my ideas for the look of the site. See above in Wireframes.
 
 ##### Google Fonts
-* To add variety and style to my project, I used two fonts: Merriweather (for major titles) and Lato (other text). These fonts have been 
+To add variety and style to my project, I used two fonts: Merriweather (for major titles) and Lato (other text). These fonts have been 
 added to my style.css page and imported both fonts, adding font weights.
 
 ##### Bootstrap 4
-* I used this technology for its framework and the grid system, which helped make my site as responsive as possible.
+I used this technology for its framework and the grid system, which helped make my site as responsive as possible.
 
 ## Testing
 
@@ -172,11 +178,16 @@ listed in the DC.js documentation and realised an ID tag was not assigned proper
 
 #### Try it out
 
-1. Navbar: Visit https://adonegan.github.io/milestone2-dashboard/stats.html and click on Stats and Info to see both pages. On your phone, uses the hamburger menu icon to move between pages.
-2. Click Me! button: Go to the website and click on the button. You will see each
-
-
-
+1. <b>Navbar</b>: Visit https://adonegan.github.io/milestone2-dashboard/stats.html and click on Stats and Info to see both pages. On your phone, uses the hamburger menu icon to move between pages.
+2. <b>Click Me! button</b>: Go to the website and click on the button. You will see a light orange box display with instructional information. Click it again and watch the box fade away again.
+3. <b>Pointer</b>: Hover over all buttons and toggle areas to see a pointed cursor. Move the cursor away to see the arrow again. Desktop only.
+4. <b>Pie chart</b>: Click on a colored slice and see other charts filter. Hover over a slice and see more amount information on the data. You can also click on legend to see data. On mobile, swipe across to see full data.
+5. <b>Bar chart</b>: Press on a bar and see other charts filter. Keep the cursor on it to see numbers of the data on display. On mobile, swipe across to see full chart.
+6. <b>Year selector</b>: Click on the year, and see other charts filter. To see all data make sure no other chart has been activated. If one is, you'll see filtered data.
+7. <b>Table data</b>: Use Prev and Next buttons to move between data. You will see amount information starting with "Showing" under the table. You'll see fitered data if a chart has been activated. On mobile, swipe across.
+8. <b>Toggle headers</b>: Click on By Honor (or any other 'By' header) and you'll see a black dropdown with added context for the chart. Click them again to see them slide up out of view again.
+9. <b>Reset buttons</b>: Both buttons must be pressed to reset the charts at the same time. There is no button for charts on an individual level.
+10. <b>Info page</b>: Click 'Info' in the navbar to visit the second and final page of the website. When this page you'll see three text blocks and a video, which stack on mobile.
 
 #### Issues
 
@@ -197,15 +208,31 @@ listed in the DC.js documentation and realised an ID tag was not assigned proper
 |           |               |              |
 
 
-
-
 ## Deployment
+
+I deployed this website using the Master Branch on hosting platform GitHub Pages. I did this by going into my GitHub repository, 
+going to Settings, publishing from the Master Branch and pressing Save. I took some guidance from this page: 
+https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages 
+
+Before deploying the site, I viewed the site by previewing the file on AWSCloud9, where I could see changes immediately after saving.
+After deploying, any changes I saved took a little longer to see but the site environment was more stable and it was easier to send 
+the link to peers for feedback. There was also the added advantage of the site always being live, and not just available if I was
+online on AWSCloud9.
+
+Before deployment, I developed the structure of my site on AWSCloud and used git init, git add, git commit -m and git push to save my
+changes and versions to GitHub Pages, so the natural host was GitHub.
 
 ## Credits
 
 ### Content
 
+Time data from Kaggle: https://www.kaggle.com/timemagazine/magazine-covers
+Text content edited and added to from content on Wikipedia: https://en.wikipedia.org/wiki/Time_Person_of_the_Year
+
 ### Media
+
+Favicon take from Google Images.
+Responsiveness and device images image from http://ami.responsivedesign.is/ 
 
 ### Acknowledgements
 
