@@ -20,6 +20,9 @@ country the winners are from.
 
 ### Wireframes
 
+Initally a scatterplot was going to be used and more charts would be added to each row, but these features proved too unrealistic given space
+and dimensions that were set. A second page was decided on when I realised I wanted to have a navbar on the site.
+
 ![wireframe1.png](/images/wireframe1.png)
 ![wireframe2.png](/images/wireframe2.png)
 
